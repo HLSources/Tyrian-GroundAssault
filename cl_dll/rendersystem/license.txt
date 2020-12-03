@@ -1,0 +1,17 @@
+/*----------------------------------------------------------------
+*	Render System
+*
+*	2001-2010, Xawari. All rights reserved.
+*
+*	This code partially depends on software technology
+*	created by Valve LLC.
+*
+*	Author of this code allows redistribution and use of it only
+*	in non-commercial (non-profit) and open-source projects.
+*
+*	If this code to be used along with Valve Gold Source(tm) Endine,
+*	the developer must also accept and follow its license agreement.
+*
+*
+* This source code contains no secret or confidential information.
+*---------------------------------------------------------------*/

@@ -1,0 +1,14 @@
+LIBRARY XBM
+EXPORTS
+	GiveFnptrsToDll			@1
+	GetEntityAPI			@2
+	GetEntityAPI2			@3
+	GetNewDLLFunctions		@4
+	ClientConnect			@5
+	ClientDisconnect		@6
+	ClientKill				@7
+	PlayerPreThink			@8
+	PlayerPostThink			@9
+	StartFrame				@10
+SECTIONS
+	.data READ WRITE

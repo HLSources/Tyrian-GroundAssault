@@ -1,0 +1,8 @@
+#include "resource.h"
+
+IDI_HALFLIFE            ICON    DISCARDABLE     "..\\common\\res\\xhl.ico"
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END

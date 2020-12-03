@@ -1,0 +1,886 @@
+----------------------SAVE THE PLANET - SAVE THE MEMORY!------------------------
+WARNING:
+Unexpected mysterious crashes in HW.DLL 0x000005 appear when some entity index exceeds 2047!
+
+TODO:
+pev->angles.y of alien slave on a rotating lift (c4a1e?) becomes an INVALID FLOAT!!!
+env_fountain on xhl1a2 after level change and return... msg too early?
+
+
+rewrite all TEMPENTS as rendersystems (impossible for glow sprites)
+
+BUGBUG
+
+NOTE
+You can use undocumented engine functions if you define CLDLL_NEWFUNCTIONS, very risky!
+
+
+LAST CHANGES:
+CFuncTrackTrain custom sounds
+
+STRINGV
+
+BYTE -> byte
+
+XDM: IsPointEntity()
+XDM: CBasePlayer:
+ TrainAttach()
+ TrainDetach()
+ A ROYAL PAIN IN THE ASS!
+
+XDM: CBaseEntity:
+*virtual* void SUB_UseTargets(CBaseEntity *pActivator, USE_TYPE useType, float value);
+----
+CBaseEntity* CBasePlayerItem::Respawn(void)
+{
+	SUB_UseTargets();
+}
+----
+Made all functions headers virtual in CBasePlayerWeapon-derived classes,
+----
+TODO: fix the weapon code!!!
+
+Made virtual UpdateOnRemove for CSatchelCharge()
+Replaced all entvars_t * parameners with CBaseEntity * in functions:
+TakeDamage
+TraceAttack
+Killed
+some other
+
+dumpbin.exe $(TargetPath) /exports /out:$(OutDir)\XDM_exp.txt
+--------------------------------------------------------------------------------
+WARNING!!! Don't use 'Maximize Speed' optimization with MS VS older than SP6!!!!
+Crash in release version when a player fires the gauss!
+    __
+\ b|re|/akable
+  \|./|
+--------------------------------------------------------------------------------
+#define RGB2LONG(r,g,b)		((DWORD)(((BYTE)(r)|((WORD)((BYTE)(g))<<8))|(((DWORD)(BYTE)(b))<<16)))
+
+#define BYTE1(ulongv)      ((BYTE)(ulongv))
+#define BYTE2(ulongv)      ((BYTE)(((WORD)(ulongv)) >> 8))
+#define BYTE3(ulongv)      ((BYTE)((ulongv)>>16))
+#define BYTE4(ulongv)      ((BYTE)((ulongv)>>32))// ?????
+--------------------------------------------------------------------------------
+BYTE = 1
+SHORT = 2
+COORD = 2
+ANGLE = 1
+STRING = -1
+--------------------------------------------------------------------------------
+pBeam->SetFlags(BEAM_FSHADEIN);
+start pos (0)-> end pos (255)
+--------------------------------------------------------------------------------
+#ifdef _DEBUG
+#define DBGALERT	(*g_engfuncs.pfnAlertMessage)
+#else
+#define DBGALERT
+#endif
+--------------------------------------------------------------------------------
+waterlevel 0 - not in water
+waterlevel 1 - feet in water
+waterlevel 2 - waist in water
+waterlevel 3 - head in water
+--------------------------------------------------------------------------------
+-- !!! UNDONE !!! Interpolated movement code for platforms --
+
+void CBaseToggle::InterpolateMove(Vector vecDest, float flStartSpeed, float flEndSpeed)
+{
+//	ALERT(at_console, "InterpolateMove(%f, %f)\n", flStartSpeed, flEndSpeed);
+	m_vecFinalDest = vecDest;
+
+	if (vecDest == pev->origin)
+	{
+		LinearMoveDone();
+		return;
+	}
+	float midspeed = min(flEndSpeed, flStartSpeed) + (flEndSpeed - flStartSpeed)/2;
+	float flTravelTime = m_flMoveDistance/midspeed;
+	Vector vecDestDelta = vecDest - pev->origin;// XYZ delta
+//	m_flMoveDistance = vecDestDelta.Length();
+	m_vecPosition2 = vecDestDelta.Normalize();
+
+	// starting velocity with current speed
+	pev->velocity = m_vecPosition2 * flStartSpeed;
+//	Vector endvelocity = vecDestDelta / (m_flMoveDistance / flEndSpeed);
+//	pev->basevelocity = (endvelocity - pev->velocity)/(flTravelTime / pev->framerate);// vector speed delta
+//	pev->basevelocity = vecDestDelta*((flEndSpeed - flStartSpeed)/m_flMoveDistance)/(flTravelTime / pev->framerate);// vector speed delta
+
+//	endvelocity = (flEndSpeed / flStartSpeed) * pev->velocity
+// OR
+	pev->dmgtime = (flEndSpeed - flStartSpeed)/(flTravelTime / 0.05);// scalar speed increment
+//	deltavelocity = vecDestDelta / (m_flMoveDistance / ds);
+
+	pev->nextthink = pev->ltime;
+	SetThink(InterMove);
+}
+
+void CBaseToggle::InterMove(void)
+{
+	if (m_vecFinalDest == pev->origin)
+	{
+		LinearMoveDone();
+		return;
+	}
+
+	pev->velocity = m_vecPosition2 * pev->speed;//pev->velocity + pev->basevelocity; or 
+	pev->speed += pev->dmgtime * gpGlobals->frametime;
+
+	// move also all attached entities
+/*	if (m_iszMoveTargetName != NULL)// XWider
+	{
+		CBaseEntity *pNewEntity = NULL;
+		while ((pNewEntity = UTIL_FindEntityByTargetname(pNewEntity, STRING(m_iszMoveTargetName))) != NULL)
+		{
+			pNewEntity->m_pMoveWith = this;
+			pNewEntity->SetThink(SUB_MoveWith);
+			pNewEntity->pev->velocity = vecDestDelta / flTravelTime;
+			pNewEntity->pev->nextthink = pev->ltime;
+		}
+	}*/
+	pev->nextthink = gpGlobals->time + 0.05;
+}
+
+--------------------------------------------------------------------------------
+FRAGS FOR KILLING MONSTERS (Originally posted by Banshee)
+
+The code checks if the killer is a client (CLASS_PLAYER),
+but doesn't seem to check what was killed.
+This means that you get a frag for killing
+anything - other than yourself, of course.
+The teamplay_gamerules.cpp does check to see
+if the victim is on the same team.
+
+But PlayerKilled is called when the player DIES,
+not when it kills somebody. I have code that does that.
+In the ::Killed method of your monster class, have this
+
+//update the scoreboard and team scores 
+CBaseEntity *ep = CBaseEntity::Instance( pevAttacker );
+if(ep->IsPlayer())
+{
+CBasePlayer *PK = (CBasePlayer*)ep;
+PK->pev->frags++; //Increment the players frags.
+MESSAGE_BEGIN( MSG_ALL, gmsgScoreInfo);
+	WRITE_BYTE(ENTINDEX(PK->edict()));
+	WRITE_SHORT(PK->pev->frags);
+	WRITE_SHORT(PK->m_iDeaths);
+MESSAGE_END();
+}
+--------------------------------------------------------------------------------
+g_engfuncs.pfnSetClientMaxspeed( ENT( pPlayer->pev ), 600); 
+--------------------------------------------------------------------------------
+// open taunts.txt, string format:
+// <name> <sound name> "text"
+void TAUNT_Init(void)
+{
+	char buffer[512];
+	int i, j;
+
+	if (fTauntInit)
+		return;
+
+	gCallTaunts = 0;
+	memset(gTauntArray, 0, MAX_TAUNTS * 2);
+	memset(buffer, 0, 512);
+
+	int filePos = 0, fileSize;
+
+	byte *pTauntFile = g_engfuncs.pfnLoadFileForMe("sound/taunts.txt", &fileSize);
+
+	if(!pTauntFile)
+		return;
+	// for each line in the file...
+	while(memfgets(pTauntFile, fileSize, filePos, buffer, 511) != NULL)
+	{
+		// skip whitespace
+		i = 0;
+		while(buffer[i] && buffer[i] == ' ')
+			i++;
+		// nothing
+		if(!buffer[i])
+			continue;
+		// found symbol, but not a quote or the next symbol is not a letter
+		if(buffer[i] != '"' || !isalpha(buffer[i+1]))
+			continue;
+		i++; // next symbol
+
+		// get taunt name
+		j = i;
+		while(buffer[j] && buffer[j] != '"')
+			j++;
+
+		if(!buffer[j])
+			continue;
+
+		if(gCallTaunts > MAX_TAUNTS)// if too much taunts
+		{
+			ALERT (at_error, "ERROR: Too many taunts in taunts.txt!\n");
+			break;
+		}
+
+		gTauntArray[gCallTaunts++].count = gCallTaunts;
+
+		buffer[j] = 0;
+		const char *pString = buffer + i;
+
+		if(strlen(pString) >= MAX_TAUNT_NAME)
+			ALERT(at_warning, "WARNING: Taunt name %s longer than %d letters!\n", pString, MAX_TAUNT_NAME-1);
+
+		ALERT(at_console, "pString: %s\n", pString);
+		strcpy(gTauntArray[gCallTaunts++].name, pString);
+
+		// get taunt sound
+		i = j;
+		while(buffer[j] && buffer[j] != '"')
+			j++;
+
+		if(!buffer[j])
+			continue;
+
+		buffer[j] = 0;
+		pString = buffer + i;
+
+		if(strlen(pString) >= MAX_TAUNT_SOUND)
+			ALERT(at_warning, "WARNING: Taunt sound %s longer than %d letters!\n", pString, MAX_TAUNT_SOUND-1);
+
+		ALERT(at_console, "pString: %s\n", pString);
+		strcpy(gTauntArray[gCallTaunts].sound, pString);
+
+		// get taunt text
+		i = j;
+		while(buffer[j] && buffer[j] != '"')
+			j++;
+
+		if(!buffer[j])
+			continue;
+
+		buffer[j] = 0;
+		pString = buffer + i;
+
+		if(strlen(pString) >= MAX_TAUNT_TEXT)
+			ALERT(at_warning, "WARNING: Taunt text %s longer than %d letters!\n", pString, MAX_TAUNT_TEXT-1);
+
+		ALERT(at_console, "pString: %s\n", pString);
+		strcpy(gTauntArray[gCallTaunts].text, pString);
+		pString = NULL;
+	}
+
+	g_engfuncs.pfnFreeFile(pTauntFile);
+	fTauntInit = TRUE;
+}
+
+--------------------------------------------------------------------------------
+/////// taunts.cpp
+
+/*
+void LoadTauntFile(char *filename)
+{
+	int length;
+	int i = 0;
+	char *pFileList = (char*)LOAD_FILE_FOR_ME(filename, &length);
+//	memset(gTauntArray, 0, sizeof(gTauntArray[MAX_TAUNTS]));
+	if(pFileList && length)
+	{
+		while(1)
+		{
+			i ++;
+			gTauntArray->count = i;
+			pFileList = COM_Parse(pFileList);
+			if(strlen(com_token) > 0)
+			{
+				strcpy(gTauntArray[i].name, com_token);
+				ALERT(at_console, "com_token = %s\n", com_token);
+			}
+			else
+				break;
+
+			if(COM_TokenWaiting(pFileList))// Any more tokens on this line?
+			{
+				pFileList = COM_Parse(pFileList);
+				if(strlen(com_token) > 0)
+				{
+					strcpy(gTauntArray[i].sound, com_token);
+					ALERT(at_console, "com_token = %s\n", com_token);
+				}
+				PRECACHE_SOUND(com_token);
+			}
+			if(COM_TokenWaiting(pFileList))// Any more tokens on this line?
+			{
+				pFileList = COM_Parse(pFileList);
+				if(strlen(com_token) > 0)
+				{
+					strcpy(gTauntArray[i].text, com_token);
+					ALERT(at_console, "com_token = %s\n", com_token);
+				}
+			}
+			if(i >= MAX_TAUNTS)
+				break;
+		}
+		FREE_FILE(pFileList);
+		gCallTaunts = i;// remember last index
+	}
+}
+*/
+/*		// get name
+		gTauntArray[gCallTaunts].name = buffer[i++];
+
+		// skip whitespace
+		while(buffer[i] && isspace(buffer[i]))
+			i++;
+		
+		if(!buffer[i])
+			continue;
+*/
+
+--------------------------------------------------------------------------------
+cl_dll
+ev_hldm.cpp
+//		CPartSystem *psystem = new CPartSystem(1, tr.endpos, tr.plane.normal, gEngfuncs.pEventAPI->EV_FindModelIndex("sprites/hotglow.spr"), kRenderTransAdd);
+//		gPartManager.AddSystem(psystem);
+//		WallSprite(tr.endpos, tr.plane.normal, IEngineStudio.GetModelByIndex(gEngfuncs.pEventAPI->EV_FindModelIndex("sprites/hotglow.spr")), 0, kRenderTransAdd, 1.0, 1.0, 1.0, 1.0, 10);
+
+--------------------------------------------------------------------------------
+/*void RenderWireFrame (void)
+{
+	// all valid model_s' stored in the engine start at 1 by this method, not 0,
+	// and the world model is always the first model.  Thus, it's at index 1.
+	model_s *pModel = IEngineStudio.GetModelByIndex (1);
+
+	// make sure it's a valid model_s pointer and the model type is mod_brush
+	if ((pModel == NULL) || (pModel->type != mod_brush))
+		return;
+
+	// now it shouldn't crash if we do this
+	// we're simply drawing every single edge in the world
+	gEngfuncs.pTriAPI->Begin (TRI_LINES);
+	gEngfuncs.pTriAPI->CullFace (TRI_NONE);	// don't cull
+	gEngfuncs.pTriAPI->RenderMode (kRenderNormal);	// normal render mode
+	gEngfuncs.pTriAPI->Color4ub (255, 255, 255, 255);	// white lines
+
+	// for all edges in the map
+	for (int i = 0; i < pModel->numedges; i++)
+	{
+		// get the current edge at index i
+		medge_t currentEdge = pModel->edges[i];
+		// the medge_t's simply store indexes into a master vertex (mvertex_t) list,
+		// so get those two vertexes
+		mvertex_t currentVertexes[2] =
+		{
+			pModel->vertexes[currentEdge.v[0]],
+			pModel->vertexes[currentEdge.v[1]]
+		};
+
+		// now render this edge/line
+		gEngfuncs.pTriAPI->Vertex3fv (currentVertexes[0].position);
+		gEngfuncs.pTriAPI->Vertex3fv (currentVertexes[1].position);
+	}
+
+	gEngfuncs.pTriAPI->End ();	// we're done rendering
+}*/
+
+--------------------------------------------------------------------------------
+/*HSPRITE gDetailSprite = NULL;
+
+void RenderDtl(void)
+{
+	model_s *pModel = IEngineStudio.GetModelByIndex (1);
+
+	if ((pModel == NULL) || (pModel->type != mod_brush))
+		return;
+
+	if(gDetailSprite == NULL)
+	{
+		char sz[256];
+		sprintf( sz, "sprites/detail/concrete01.spr" );
+		gDetailSprite = SPR_Load(sz);
+	}
+
+	if(!gEngfuncs.pTriAPI->SpriteTexture((struct model_s *)gEngfuncs.GetSpritePointer(gDetailSprite), 0 ))
+		return;
+
+	gEngfuncs.pTriAPI->Color4f(1.0, 1.0, 1.0, 0.1);
+	gEngfuncs.pTriAPI->RenderMode(kRenderTransTexture);
+	gEngfuncs.pTriAPI->CullFace(TRI_NONE);
+	gEngfuncs.pTriAPI->Begin(TRI_QUADS);
+
+	vec3_t v;
+	for (int i = 0; i < pModel->numvertexes; i++)
+	{
+//		gEngfuncs.pTriAPI->TexCoord2f(fTX, fTY);
+		gEngfuncs.pTriAPI->Vertex3fv(pModel->vertexes[i].position);
+	}
+	gEngfuncs.pTriAPI->End();
+	gEngfuncs.pTriAPI->RenderMode(kRenderNormal);
+}*/
+--------------------------------------------------------------------------------
+
+BOOL CBaseBot::LoadBotFile(char *filename)
+{
+	char botpath[MAX_PATH] = "0";
+	sprintf(botpath, "bots/%s.bot", filename);
+//	ifstream botFile(pathname);
+	FILE *botFile = LoadFile(botpath, "r");
+
+//	if(botFile.bad())// Check to see if file exists
+	if(!botFile)
+		return FALSE;
+
+	char buffer[64];
+	char param[32];// !!! MUST be half of buffffffer
+	char value[32];
+//	char *line;
+	int a = 0;
+//	while(botFile.getline(buffer, sizeof(buffer)))
+	while(fgets(buffer, 64, botFile) != NULL)
+	{
+		if(buffer[0] =='/' || buffer[0] == '\n')
+			continue;// skip comments or blank lines
+
+		if(isspace(buffer[0]) || !isalpha(buffer[0]))
+			continue;
+
+		int i = 0;
+		while(buffer[i] != '=' && i < 32)// search for '='
+			i ++;
+
+		i ++;// now buffer[i] == '='
+		int eq_pos = i;// remember
+		for(a=0; a<eq_pos; a++)// copy from 0 to '='
+			param[a] = buffer[a];
+		param[a+1] = '\0';
+
+		while(buffer[i] != ';' && i < 64)// search for ';'
+			i ++;
+
+		i ++;// now buffer[i] == ';'
+		for(a=eq_pos+1; a<i; a++)// copy from '=' to ';'
+			value[a] = buffer[a];
+		value[a+1] = '\0';
+
+		ALERT(at_console, "LoadBotFile:%s=%s\n", param, value);
+//	SUX	strcpy(line, buffer);
+//		ParseNextItem(param, &line, '=', '\0');
+//		ParseNextItem(value, &line, ';', '\0');
+...
+	fclose()
+}
+--------------------------------------------------------------------------------
+
+
+/*void COLORPRINTF(float r, float g, float b, char *fmt, ... )
+{
+	va_list	argptr;
+	char string[256];
+	va_start(argptr, fmt);
+	vsprintf(string, fmt, argptr);
+	va_end(argptr);
+
+	con_nprint_t nfo;
+	nfo.index = 0;
+	nfo.time_to_live = 4;
+	nfo.color[0] = r;
+	nfo.color[1] = g;
+	nfo.color[2] = b;
+	CON_NXPRINTF(&nfo, string);
+}*/
+
+--------------------------------------------------------------------------------
+TeleporterParticles2
+
+		angle = ltime * avelocities[i][0];
+		SinCos(angle, &s0, &c0);
+		angle = ltime * avelocities[i][1];
+		SinCos(angle, &s1, &c1);
+		angle = ltime * avelocities[i][2];
+		SinCos(angle, &s2, &c2);
+
+/*		dir[0] = s0*c0;
+		dir[1] = s1*c1;
+		dir[2] = s2*c2;*/
+/*		dir[0] = s0*(1-c0);
+		dir[1] = s1*(1-c1);
+		dir[2] = s2*(1-c2);*/
+/*		dir[0] = s0/c0; cool with bytedirs
+		dir[1] = s1/c1;
+		dir[2] = s2/c2;*/
+/*		dir[0] = sin(ltime + i);
+		dir[1] = cos(ltime + i);
+		dir[2] = 0;*/
+
+
+
+	float step = (M_PI*2.0)/m_segments;
+	float x1 = 0.0, y1 = 0.0, x2 = 0.0, y2 = 0.0;
+	float v = 0.0;
+	float vs = 1.0/m_segments;
+	for (float a = 0.0; a < M_PI*2.0; a += step)
+	{
+		SinCos(a, &x1, &y1);
+		x1 = x1*m_radius + m_origin[0];
+		y1 = y1*m_radius + m_origin[1];
+
+		SinCos(a + step, &x2, &y2);
+		x2 = x2*m_radius + m_origin[0];
+		y2 = y2*m_radius + m_origin[1];
+
+		gEngfuncs.pTriAPI->TexCoord2f(0.0, v);
+		gEngfuncs.pTriAPI->Vertex3fv(m_origin);
+
+		gEngfuncs.pTriAPI->TexCoord2f(1.0, v);
+		gEngfuncs.pTriAPI->Vertex3f(x1, y1, m_origin[2]);
+
+		gEngfuncs.pTriAPI->TexCoord2f(1.0, v + vs);
+		gEngfuncs.pTriAPI->Vertex3f(x2, y2, m_origin[2]);
+		v += vs;
+	}
+
+--------------------------------------------------------------------------------
+/*int CHud::MsgFunc_MagicGlow(const char *pszName, int iSize, void *pbuf)
+{
+	vec3_t origin;
+	BEGIN_READ(pbuf, iSize);
+	origin.x		= READ_COORD();
+	origin.y		= READ_COORD();
+	origin.z		= READ_COORD();
+	int sprindex	= READ_SHORT();
+	int beamindex	= READ_SHORT();
+	int r			= READ_BYTE();
+	int g			= READ_BYTE();
+	int b			= READ_BYTE();
+	int a			= READ_BYTE();
+	int scale		= READ_BYTE();
+	int count		= READ_BYTE();
+	int radius		= READ_SHORT();
+	int life		= READ_SHORT();
+
+	sprindex = gEngfuncs.pEventAPI->EV_FindModelIndex("sprites/hotglow.spr");
+	beamindex = gEngfuncs.pEventAPI->EV_FindModelIndex("sprites/shockwave.spr");
+	life = 50;
+	// main glow
+//	gEngfuncs.pEfxAPI->R_TempSprite(origin, origin, scale * 0.1, sprindex, kRenderGlow, kRenderFxNoDissipation, a/255, life * 0.1, FTENT_FADEOUT | FTENT_SPRANIMATE | FTENT_SPRANIMATELOOP);
+	gEngfuncs.pEfxAPI->R_TempSprite(origin, vec3_origin, 1.0, sprindex, kRenderTransAdd, kRenderFxNoDissipation, a/255, life * 0.1, FTENT_FADEOUT | FTENT_SPRANIMATE);
+
+//	pSprite[count];
+	for(int i = 0; i < count; i++)
+	{
+		// sprites
+//		TEMPENTITY *pSprite = gEngfuncs.pEfxAPI->R_TempSprite(origin, VectorRandom() * (radius/life), scale * 0.01, sprindex, kRenderTransAdd, kRenderFxNoDissipation, a/255, life * 0.1, FTENT_FLICKER | FTENT_FADEOUT | FTENT_SPRANIMATE | FTENT_SPIRAL | FTENT_SPRANIMATELOOP | FTENT_COLLIDEWORLD | FTENT_COLLIDEKILL);
+		TEMPENTITY *pSprite = gEngfuncs.pEfxAPI->R_TempSprite(origin, VectorRandom() * (radius/life), 0.3, sprindex, kRenderTransAdd, kRenderFxNoDissipation, a/255, life * 0.1, FTENT_FLICKER | FTENT_FADEOUT | FTENT_SPRANIMATE | FTENT_SPIRAL | FTENT_COLLIDEWORLD | FTENT_COLLIDEKILL);
+		// trails
+		gEngfuncs.pEfxAPI->R_BeamFollow(pSprite->entity.index, beamindex, life * 0.1, scale * 0.1, r/255, g/255, b/255, a/255);
+	}
+
+	dlight_t *dl = gEngfuncs.pEfxAPI->CL_AllocDlight(0);
+	VectorCopy(origin, dl->origin);
+	dl->radius = radius * 0.1;
+	dl->color.r = r; dl->color.g = g; dl->color.b = b;
+	dl->decay = 0.9;
+	dl->die = gEngfuncs.GetClientTime() + life * 0.1;
+	return 1;
+}*/
+
+/*		PLAYBACK_EVENT_FULL(FEV_HOSTONLY | FEV_RELIABLE, m_pPlayer->edict(), m_usGaussFire,
+			0.0, (float *)&vecSrc, (float *)&tr.vecEndPos, pev->renderamt/255, 0.0,
+			m_pPlayer->entindex() + 0x1000, fFirstBeam, m_fPrimaryFire, m_iBeam);*/
+
+/*		CBeam *pBeam = CBeam::BeamCreate("sprites/gaussbeam.spr",200);
+		if (fFirstBeam)
+		{
+			m_pPlayer->pev->effects |= EF_MUZZLEFLASH;
+			fFirstBeam = 0;
+//			pBeam->PointEntInit(tr.vecEndPos, ENTINDEX(ENT(pev)));
+			pBeam->EntPointInit(ENTINDEX(ENT(pev)), tr.vecEndPos);
+			pBeam->SetStartAttachment(1);
+		}
+		else
+			pBeam->PointsInit(vecSrc, tr.vecEndPos);
+
+		if (m_fPrimaryFire)// Width
+			pBeam->SetWidth(GAUSS_BEAM_WIDTH_PRI);
+		else
+			pBeam->SetWidth(GAUSS_BEAM_WIDTH_SEC);
+
+		pBeam->SetNoise(GAUSS_BEAM_NOISE);
+		pBeam->SetScrollRate(16);
+		pBeam->pev->rendercolor = pev->rendercolor;
+		pBeam->pev->renderamt = pev->renderamt;
+		pBeam->LiveForTime(0.1);
+*/
+--------------------------------------------------------------------------------
+int EV_HLDM_DamageDecal( physent_t *pe, int iBulletType )// Bullet
+{
+//	if (!pe)
+//		CON_DPRINTF(">>> !pe !!!\n");
+
+	char decalname[16];
+	if ( pe && pe->classnumber == 1 )
+	{
+		sprintf( decalname, "{break%d", RANDOM_LONG(1, 3));
+	}
+	else if ( pe && pe->rendermode != kRenderNormal )
+	{
+		sprintf( decalname, "{bproof1" );
+	}
+	else
+	{
+		switch( iBulletType )
+		{
+		case BULLET_PLAYER_357:
+		case BULLET_PLAYER_CROWBAR:
+		case BULLET_MONSTER_12MM:
+			sprintf(decalname, "{bigshot%d", RANDOM_LONG(1, 5));
+			break;
+		default:
+			sprintf(decalname, "{shot%d", RANDOM_LONG(1, 5));
+			break;
+		}
+	}
+	return gEngfuncs.pEfxAPI->Draw_DecalIndexFromName(decalname);
+}
+
+--------------------------------------------------------------------------------
+
+
+#ifdef _DEBUG
+#include <afx.h>
+    CMemoryState oldMemState, newMemState, diffMemState;
+#endif // _DEBUG
+
+// Required DLL entry point
+BOOL WINAPI DllMain(
+   HINSTANCE hinstDLL,
+   DWORD fdwReason,
+   LPVOID lpvReserved)
+{
+	if (fdwReason == DLL_PROCESS_ATTACH)
+    {
+#ifdef _DEBUG
+    oldMemState.Checkpoint();
+#endif // _DEBUG
+    }
+	else if (fdwReason == DLL_PROCESS_DETACH)
+    {
+#ifdef _DEBUG
+    newMemState.Checkpoint();
+    if( diffMemState.Difference( oldMemState, newMemState ) )
+    {
+        TRACE("Memory leaked!\n");
+		diffMemState.DumpStatistics();
+    }
+#endif // _DEBUG
+    }
+	return TRUE;
+}
+
+--------------------------------------------------------------------------------
+
+RAINRAINRAIN
+/*			for (int i = 0; i < pModel->numleafs; i++)
+			{
+				vec3_t vmins, vmaxs;
+				vmins[0] = pModel->leafs[i].minmaxs[0];
+				vmins[1] = pModel->leafs[i].minmaxs[1];
+				vmins[2] = pModel->leafs[i].minmaxs[2];
+				vmaxs[0] = pModel->leafs[i].minmaxs[3];
+				vmaxs[1] = pModel->leafs[i].minmaxs[4];
+				vmaxs[2] = pModel->leafs[i].minmaxs[5];
+
+				gEngfuncs.pEfxAPI->R_ParticleBox(vmins, vmaxs, 255,255,255, life/10);
+
+				psystem = new CPSDrips(maxpart/pModel->numnodes, vmins, vmaxs, v3, sprindex, r_mode, life * 0.1);
+				if (psystem != NULL)
+				{
+					psystem->flags = flags;
+					g_pRenderManager->AddSystem(psystem);
+				}
+			}
+			return 1;*/
+
+
+--------------------------------------------------------------------------------
+New gauss beam code
+
+void EV_BeamImpact(struct event_args_s *args)
+{
+	vec3_t origin, normal, spot, end;
+	VectorCopy(args->origin, origin);// wall entry point
+	VectorScale(args->angles, -1.0, normal);// plane normal
+	VectorNormalize(normal);
+	VectorAdd(origin, normal, spot);// move back a little bit
+	VectorMA(origin, 8.0, args->angles, end);// move forward little more
+	float flDamage = args->fparam1;
+	float scale = 1.0;
+	int count = 1;
+	int m_fPrimaryFire = args->bparam1;
+	int r = 255;
+	int g = 255;
+	int b = 255;
+
+	CON_PRINTF(" > BI damage: %f, fire mode %d\n", flDamage, m_fPrimaryFire);
+
+	if (m_fPrimaryFire)
+	{
+		StringToRGB(CVAR_GET_STRING("tau_pri_rgb"), r,g,b);
+		scale = flDamage*0.025;
+		count = (int)(flDamage*0.4);
+	}
+	else// secondary
+	{
+		StringToRGB(CVAR_GET_STRING("tau_sec_rgb"), r,g,b);
+		scale = 0.1 + flDamage*0.008;
+		count = (int)(2 + flDamage*0.2);
+	}
+
+	if (args->bparam2 == 0)// reflect
+	{
+		CON_PRINTF(" -> reflect\n");
+		gEngfuncs.pEfxAPI->R_TempSprite(origin, vec3_origin, scale, args->iparam1, kRenderGlow, kRenderFxNoDissipation, 1.0, 0.0, FTENT_FADEOUT);
+		gEngfuncs.pEfxAPI->R_Sprite_Trail(0, origin, spot, args->iparam1, count, 1.0, 0.1, 240, 255, min(64+flDamage*2.0, 200));
+
+		if (RANDOM_LONG(0,1) == 0)
+			EMIT_SOUND(-1, origin, CHAN_STATIC, "weapons/gauss_refl1.wav", 1.0, ATTN_IDLE, 0, PITCH_NORM);
+		else
+			EMIT_SOUND(-1, origin, CHAN_STATIC, "weapons/gauss_refl2.wav", 1.0, ATTN_IDLE, 0, PITCH_NORM);
+	}
+	else
+	{
+		// entry effects: light, glow, NO balls
+		int decalindex = gEngfuncs.pEfxAPI->Draw_DecalIndex(gEngfuncs.pEfxAPI->Draw_DecalIndexFromName("{gaussshot1"));
+		pmtrace_t tr;
+		gEngfuncs.pEventAPI->EV_PushPMStates();
+		gEngfuncs.pEventAPI->EV_SetSolidPlayers(-1);	
+		gEngfuncs.pEventAPI->EV_SetTraceHull(2);
+		gEngfuncs.pEventAPI->EV_PlayerTrace(origin, end, PM_STUDIO_BOX, -1, &tr);
+		gEngfuncs.pEfxAPI->R_DecalShoot(decalindex, gEngfuncs.pEventAPI->EV_IndexFromTrace(&tr), 0, tr.endpos, 0);
+		DynamicLight(spot, scale*64, r,g,b, 2.0, 20.0);
+
+		if (!tr.allsolid && args->fparam2 > 0)// found empty space behind the wall
+		{
+			CON_PRINTF(" -> trying to hit throuh wall\n");
+			// entry effects: balls
+			gEngfuncs.pEfxAPI->R_TempSprite(origin, vec3_origin, scale*0.6, args->iparam1, kRenderGlow, kRenderFxNoDissipation, 0.9, 2.0, FTENT_FADEOUT);
+			gEngfuncs.pEfxAPI->R_Sprite_Trail(0, origin, origin + normal, args->iparam1, count*0.5, 3.0, 0.1, 200, 255, flDamage*2.0);
+
+			VectorCopy(tr.endpos, end);// trace back from the other side of the wall
+			gEngfuncs.pEventAPI->EV_PlayerTrace(end, origin, PM_STUDIO_BOX, -1, &tr);
+			vec3_t delta;
+			VectorSubtract(end, tr.endpos, delta);
+			float n = Length(delta);
+			if (!tr.allsolid && n < flDamage)
+			{
+				CON_PRINTF(" --> succeeded\n");
+				// exit effects: glow, balls, decal
+				gEngfuncs.pEfxAPI->R_TempSprite(tr.endpos, vec3_origin, scale*0.6, args->iparam1, kRenderGlow, kRenderFxNoDissipation, 0.9, 2.0, FTENT_FADEOUT);
+				gEngfuncs.pEfxAPI->R_Sprite_Trail(0, tr.endpos, tr.endpos + tr.plane.normal, args->iparam1, count*0.8, 3.0, 0.1, 200, 255, flDamage*2.0);
+				gEngfuncs.pEfxAPI->R_DecalShoot(decalindex, gEngfuncs.pEventAPI->EV_IndexFromTrace(&tr), 0, tr.endpos, 0);
+
+				EMIT_SOUND(-1, tr.endpos, CHAN_STATIC, "weapons/gauss_hit.wav", 1.0, ATTN_STATIC, 0, PITCH_NORM);
+			}
+		}
+		else// entry/final effect
+		{
+			CON_PRINTF(" -> final hit\n");
+			gEngfuncs.pEfxAPI->R_TempSprite(spot, vec3_origin, scale, args->iparam1, kRenderGlow, kRenderFxNoDissipation, (m_fPrimaryFire?1.0:(0.25+flDamage*0.01)), 5.0, FTENT_FADEOUT);
+			gEngfuncs.pEfxAPI->R_Sprite_Trail(0, origin, spot, args->iparam1, count, 3.0, 0.1, 100+flDamage, 255, 40+flDamage*0.5);
+			if (!m_fPrimaryFire)
+			{
+				vec3_t angles;
+				normal[0] *= -1;
+				normal[1] *= -1;
+				VectorAngles(normal, angles);
+				g_pRenderManager->AddSystem(new CRSSprite(origin, angles, 0.25, 0.1, args->iparam2, kRenderTransAdd, 255,255,255, 1.0, 0.2, 0.0));
+			}
+		}
+		gEngfuncs.pEventAPI->EV_PopPMStates();
+	}
+	CON_PRINTF(" - end BI\n");
+}
+
+--------------------------------------------------------------------------------
+void EV_FireBeam(event_args_t *args)
+{
+	vec3_t origin;
+	vec3_t vecSrc;
+	int idx = args->entindex;
+
+	VectorCopy(args->origin, origin);
+
+	EV_MuzzleFlash(idx);
+	if (EV_IsLocal(idx))
+	{
+		gEngfuncs.pEventAPI->EV_WeaponAnimation(args->bparam1, 0);
+		V_PunchAxis(0, -2.0);
+	}
+
+	if (args->bparam2 == 0)
+		EMIT_SOUND(idx, origin, CHAN_WEAPON, "weapons/beamrifle_fire1.wav", 1.0, ATTN_NORM, 0, RANDOM_LONG(98, 102));
+	else
+		EMIT_SOUND(idx, origin, CHAN_WEAPON, "weapons/beamrifle_fire2.wav", 1.0, ATTN_NORM, 0, RANDOM_LONG(98, 102));
+
+	EV_GetGunPosition(args, vecSrc, origin);
+
+	pmtrace_t tr;
+	vec3_t vecDest, angles, forward, right;
+	gEngfuncs.GetViewAngles(angles);
+
+	AngleVectors(angles, forward, right, NULL);
+	VectorMA(vecSrc, 8192, forward, vecDest);
+
+	gEngfuncs.pEventAPI->EV_SetUpPlayerPrediction(false, true);
+	gEngfuncs.pEventAPI->EV_PushPMStates();
+	gEngfuncs.pEventAPI->EV_SetSolidPlayers(args->entindex - 1);	
+	gEngfuncs.pEventAPI->EV_SetTraceHull(2);
+	gEngfuncs.pEventAPI->EV_PlayerTrace(vecSrc, vecDest, PM_STUDIO_BOX, -1, &tr);
+	gEngfuncs.pEventAPI->EV_PopPMStates();
+
+	DecalTrace("{gaussshot1", &tr);
+
+	if (g_pRenderManager && !tr.allsolid)
+	{
+		int spr_glow = gEngfuncs.pEventAPI->EV_FindModelIndex("sprites/iceball1.spr");// cannot transmit these indexes =(
+		int spr_beam = gEngfuncs.pEventAPI->EV_FindModelIndex("sprites/gaussbeam.spr");
+		int spr_ring = args->iparam1;
+		int spr_star = args->iparam2;
+		g_pRenderManager->AddSystem(new CRSSprite(vecSrc, vec3_origin, spr_glow, kRenderTransAdd, 255,255,255, 1.0, -1.2,  2.0, 16.0, 2.0));
+		g_pRenderManager->AddSystem(new CRSBeam(vecSrc, tr.endpos, spr_beam, kRenderTransAdd, 80,80,255, 1.0, -1.2, 0.1, 8.0, 0.0));
+		if (args->bparam2 > 0)
+		{
+			g_pRenderManager->AddSystem(new CPSFlatTrail(vecSrc, tr.endpos, spr_ring, kRenderTransAdd, 255,255,255, 1.0, -0.004, 0.1, 2.0, 16.0, 0.0));
+			g_pRenderManager->AddSystem(new CRSBeamStar(tr.endpos, spr_star, 64, kRenderTransAdd, 255,255,255, 1.0, -1.2, 1.0, 300.0, 4.0));
+		}
+		else// "r_efx.h"
+			gEngfuncs.pEfxAPI->R_StreakSplash(tr.endpos, vec3_origin, 7, 32, 56, -200, 200);
+
+		if (gHUD.m_pCvarEffects->value > 0)
+			DynamicLight(tr.endpos, 96, 160,160,255, 2.0, 128.0);
+	}
+}
+
+--------------------------------------------------------------------------------
+/*		cl_entity_t *ent = NULL;
+		for (int i=1; i<pparams->max_entities; i++)
+		{
+			ent = gEngfuncs.GetEntityByIndex(i);
+			if (ent && !(ent->baseline.eflags & EFLAG_DRAW_ALWAYS))
+			{
+				ent->curstate.effects |= EF_NODRAW;
+				ent->curstate.rendermode = kRenderTransTexture;
+				ent->curstate.renderamt = 0;
+			}
+		}*/
+
+--------------------------------------------------------------------------------
+DRAW LINE (doesn't work)
+/*
+	gEngfuncs.pTriAPI->SpriteTexture(m_pTexture, 0);
+	gEngfuncs.pTriAPI->RenderMode(kRenderTransAdd);
+	gEngfuncs.pTriAPI->CullFace(TRI_NONE);
+	gEngfuncs.pTriAPI->Begin(TRI_LINES);
+	gEngfuncs.pTriAPI->Color4f(255,0,0,127);
+	gEngfuncs.pTriAPI->TexCoord2f(0,0);
+	gEngfuncs.pTriAPI->Vertex3fv(g_vecViewOrigin);
+	gEngfuncs.pTriAPI->TexCoord2f(1,1);
+	gEngfuncs.pTriAPI->Vertex3fv(p->m_vPos);
+	gEngfuncs.pTriAPI->End();
+*/

@@ -1,0 +1,4009 @@
+# depslib dependency file v1.0
+1239645625 source:c:\dev\projects\xdm\sourcecode\dlls\h_export.cpp
+	"windef.h"
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+
+1198764448 c:\dev\mingw\include\windows.h
+	<winresrc.h>
+	<stdarg.h>
+	<windef.h>
+	<wincon.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<winver.h>
+	<winnetwk.h>
+	<winreg.h>
+	<winsvc.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<imm.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<commdlg.h>
+	<winspool.h>
+	<winsock2.h>
+	<winsock.h>
+	<ole2.h>
+
+1198764448 c:\dev\mingw\include\winresrc.h
+	<winuser.h>
+	<winnt.h>
+	<winver.h>
+	<dde.h>
+	<dlgs.h>
+	<commctrl.h>
+
+1198764450 c:\dev\mingw\include\winuser.h
+
+1198764448 c:\dev\mingw\include\winnt.h
+	<winerror.h>
+	<string.h>
+	<basetsd.h>
+	<pshpack4.h>
+	<poppack.h>
+
+1198764448 c:\dev\mingw\include\winerror.h
+
+1198765422 c:\dev\mingw\include\string.h
+	<_mingw.h>
+	<stddef.h>
+
+1198765416 c:\dev\mingw\include\_mingw.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\basetsd.h
+
+1198764444 c:\dev\mingw\include\pshpack4.h
+
+1198764444 c:\dev\mingw\include\poppack.h
+
+1198764450 c:\dev\mingw\include\winver.h
+
+1198764438 c:\dev\mingw\include\dde.h
+
+1198764438 c:\dev\mingw\include\dlgs.h
+
+1198764436 c:\dev\mingw\include\commctrl.h
+	<prsht.h>
+
+1198764444 c:\dev\mingw\include\prsht.h
+
+1198764448 c:\dev\mingw\include\windef.h
+	<winnt.h>
+
+1198764448 c:\dev\mingw\include\wincon.h
+
+1198764448 c:\dev\mingw\include\winbase.h
+
+1198764448 c:\dev\mingw\include\wingdi.h
+
+1198764448 c:\dev\mingw\include\winnls.h
+
+1198764448 c:\dev\mingw\include\winnetwk.h
+
+1198764448 c:\dev\mingw\include\winreg.h
+
+1198764450 c:\dev\mingw\include\winsvc.h
+
+1198764436 c:\dev\mingw\include\cderr.h
+
+1198764438 c:\dev\mingw\include\ddeml.h
+
+1198764438 c:\dev\mingw\include\imm.h
+
+1198764442 c:\dev\mingw\include\lzexpand.h
+
+1198764442 c:\dev\mingw\include\mmsystem.h
+
+1198764442 c:\dev\mingw\include\nb30.h
+
+1198764446 c:\dev\mingw\include\rpc.h
+	<windows.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<winerror.h>
+	<excpt.h>
+
+1198764446 c:\dev\mingw\include\rpcdce.h
+	<basetyps.h>
+	<rpcdcep.h>
+
+1198764436 c:\dev\mingw\include\basetyps.h
+
+1198764446 c:\dev\mingw\include\rpcdcep.h
+
+1198764446 c:\dev\mingw\include\rpcnsi.h
+
+1198764446 c:\dev\mingw\include\rpcnterr.h
+
+1198765418 c:\dev\mingw\include\excpt.h
+	<_mingw.h>
+	<windef.h>
+
+1198764446 c:\dev\mingw\include\shellapi.h
+	<pshpack2.h>
+	<poppack.h>
+
+1198764444 c:\dev\mingw\include\pshpack2.h
+
+1198764448 c:\dev\mingw\include\winperf.h
+
+1198764436 c:\dev\mingw\include\commdlg.h
+	<unknwn.h>
+	<prsht.h>
+
+1198764448 c:\dev\mingw\include\unknwn.h
+	<windows.h>
+	<objfwd.h>
+	<wtypes.h>
+
+1198764442 c:\dev\mingw\include\objfwd.h
+	<basetyps.h>
+
+1198764450 c:\dev\mingw\include\wtypes.h
+	<rpc.h>
+	<rpcndr.h>
+
+1198764446 c:\dev\mingw\include\rpcndr.h
+	<rpcnsip.h>
+	<objfwd.h>
+
+1198764446 c:\dev\mingw\include\rpcnsip.h
+
+1198764450 c:\dev\mingw\include\winspool.h
+
+1198764450 c:\dev\mingw\include\winsock2.h
+	<windows.h>
+
+1198764450 c:\dev\mingw\include\winsock.h
+	<windows.h>
+	<mswsock.h>
+
+1198764442 c:\dev\mingw\include\mswsock.h
+
+1198764444 c:\dev\mingw\include\ole2.h
+	<winerror.h>
+	<objbase.h>
+	<olectlid.h>
+	<oleauto.h>
+	<oleidl.h>
+
+1198764442 c:\dev\mingw\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<stdlib.h>
+	<basetyps.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<cguid.h>
+
+1198765422 c:\dev\mingw\include\stdlib.h
+	<_mingw.h>
+	<stddef.h>
+
+1198764444 c:\dev\mingw\include\objidl.h
+	<objfwd.h>
+
+1198764436 c:\dev\mingw\include\cguid.h
+
+1198764444 c:\dev\mingw\include\olectlid.h
+
+1198764444 c:\dev\mingw\include\oleauto.h
+	<oaidl.h>
+
+1198764442 c:\dev\mingw\include\oaidl.h
+	<windows.h>
+	<ole2.h>
+
+1198764444 c:\dev\mingw\include\oleidl.h
+	<objfwd.h>
+
+1228048524 c:\dev\projects\xdm\sourcecode\dlls\extdll.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<direct.h>
+	<math.h>
+	"windows.h"
+	<limits.h>
+	"stdlib.h"
+	"math.h"
+	"vector.h"
+	"const.h"
+	"progdefs.h"
+	"edict.h"
+	"eiface.h"
+	"cdll_dll.h"
+
+1198769022 c:\dev\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1198769024 c:\dev\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
+
+1198769018 c:\dev\mingw\include\ctype.h
+	<_mingw.h>
+	<stddef.h>
+
+1198769018 c:\dev\mingw\include\direct.h
+	<_mingw.h>
+	<stddef.h>
+	<io.h>
+
+1198769018 c:\dev\mingw\include\io.h
+	<_mingw.h>
+	<sys/types.h>
+
+1198769020 c:\dev\mingw\include\math.h
+	<_mingw.h>
+
+1198769020 c:\dev\mingw\include\limits.h
+	<_mingw.h>
+
+1236329625 c:\dev\projects\xdm\sourcecode\common\vector.h
+	<stdio.h>
+	<math.h>
+
+1152390214 c:\dev\projects\xdm\sourcecode\common\const.h
+	"in_buttons.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\in_buttons.h
+
+1228218258 c:\dev\projects\xdm\sourcecode\engine\progdefs.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\engine\edict.h
+	"progdefs.h"
+
+1228047604 c:\dev\projects\xdm\sourcecode\engine\eiface.h
+	<stdio.h>
+	"custom.h"
+	"cvardef.h"
+	"../common/crc.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\engine\custom.h
+	"const.h"
+	"crc.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\crc.h
+
+1099735296 c:\dev\projects\xdm\sourcecode\common\cvardef.h
+
+1120588148 c:\dev\projects\xdm\sourcecode\common\cdll_dll.h
+
+1236330013 c:\dev\projects\xdm\sourcecode\dlls\util.h
+	"activity.h"
+	"enginecallback.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\activity.h
+
+1228218258 c:\dev\projects\xdm\sourcecode\dlls\enginecallback.h
+	"event_flags.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\event_flags.h
+
+1239727921 c:\dev\projects\xdm\sourcecode\dlls\cbase.h
+	"saverestore.h"
+	"schedule.h"
+	"monsterevent.h"
+	"basemonster.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\saverestore.h
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\schedule.h
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\monsterevent.h
+
+1237053334 c:\dev\projects\xdm\sourcecode\dlls\basemonster.h
+
+1217873726 source:c:\dev\projects\xdm\sourcecode\dlls\xdm.rc
+	"resource.h"
+	"afxres.h"
+
+1187956428 c:\dev\projects\xdm\sourcecode\dlls\resource.h
+
+1198764436 c:\dev\mingw\include\afxres.h
+	<windows.h>
+
+1198764436 c:\dev\mingw\include\basetsd.h
+
+1239644232 source:c:\dev\projects\xdm\sourcecode\dlls\ai_basenpc_schedule.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"animation.h"
+	"scripted.h"
+	"nodes.h"
+	"defaultai.h"
+	"soundent.h"
+
+1237040852 c:\dev\projects\xdm\sourcecode\dlls\monsters.h
+	"skill.h"
+	"basemonster.h"
+
+1122838112 c:\dev\projects\xdm\sourcecode\dlls\skill.h
+
+1106230200 c:\dev\projects\xdm\sourcecode\dlls\animation.h
+	"monsterevent.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\scripted.h
+	"scriptevent.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\scriptevent.h
+
+1069866532 c:\dev\projects\xdm\sourcecode\dlls\nodes.h
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\defaultai.h
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\soundent.h
+
+1118142040 source:c:\dev\projects\xdm\sourcecode\dlls\airtank.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+
+1237040941 c:\dev\projects\xdm\sourcecode\dlls\weapons.h
+	"effects.h"
+	"weapondef.h"
+	"basemonster.h"
+
+1239643170 c:\dev\projects\xdm\sourcecode\dlls\effects.h
+
+1217779926 c:\dev\projects\xdm\sourcecode\common\weapondef.h
+
+1239643084 source:c:\dev\projects\xdm\sourcecode\dlls\ammo.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"gamerules.h"
+	"explode.h"
+
+1218018384 c:\dev\projects\xdm\sourcecode\dlls\gamerules\gamerules.h
+	"gamedefs.h"
+
+1135873614 c:\dev\projects\xdm\sourcecode\common\gamedefs.h
+
+1218136082 c:\dev\projects\xdm\sourcecode\dlls\explode.h
+
+1152558060 source:c:\dev\projects\xdm\sourcecode\dlls\animating.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"animation.h"
+	"saverestore.h"
+
+1238365953 source:c:\dev\projects\xdm\sourcecode\dlls\animation.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../common/nowin.h"
+	"extdll.h"
+	"studio.h"
+	"activity.h"
+	"activitymap.h"
+	"animation.h"
+	"scriptevent.h"
+	"enginecallback.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\nowin.h
+	<unistd.h>
+
+1198769022 c:\dev\mingw\include\unistd.h
+	<io.h>
+	<process.h>
+	<getopt.h>
+
+1198769020 c:\dev\mingw\include\process.h
+	<_mingw.h>
+	<sys/types.h>
+
+1198769018 c:\dev\mingw\include\getopt.h
+
+1175252794 c:\dev\projects\xdm\sourcecode\engine\studio.h
+	"studio_event.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\studio_event.h
+
+1138874996 c:\dev\projects\xdm\sourcecode\dlls\activitymap.h
+
+1239643185 source:c:\dev\projects\xdm\sourcecode\dlls\bmodels.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"doors.h"
+	"game.h"
+	"player.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\doors.h
+
+1235771390 c:\dev\projects\xdm\sourcecode\dlls\game.h
+
+1232473580 c:\dev\projects\xdm\sourcecode\dlls\player.h
+	"pm_materials.h"
+
+1116868244 c:\dev\projects\xdm\sourcecode\pm_shared\pm_materials.h
+
+1239643349 source:c:\dev\projects\xdm\sourcecode\dlls\buttons.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"doors.h"
+
+1218136516 source:c:\dev\projects\xdm\sourcecode\dlls\cbase.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"client.h"
+	"decals.h"
+	"gamerules.h"
+	"game.h"
+	"skill.h"
+	"studio.h"
+
+1097856310 c:\dev\projects\xdm\sourcecode\dlls\client.h
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\decals.h
+
+1239643356 source:c:\dev\projects\xdm\sourcecode\dlls\chasecam.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"gamerules.h"
+	"player.h"
+	"client.h"
+
+1239647211 source:c:\dev\projects\xdm\sourcecode\dlls\client.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"spectator.h"
+	"client.h"
+	"soundent.h"
+	"gamerules.h"
+	"game.h"
+	"customentity.h"
+	"weapons.h"
+	"globals.h"
+	"items.h"
+	"pm_shared.h"
+	"voice_gamemgr.h"
+	"entity_state.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\spectator.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\engine\customentity.h
+
+1237043443 c:\dev\projects\xdm\sourcecode\dlls\globals.h
+
+1115310816 c:\dev\projects\xdm\sourcecode\dlls\items.h
+
+1239646880 c:\dev\projects\xdm\sourcecode\pm_shared\pm_shared.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\game_shared\voice_gamemgr.h
+	"voice_common.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\game_shared\voice_common.h
+	"bitvec.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\game_shared\bitvec.h
+	<assert.h>
+
+1198769018 c:\dev\mingw\include\assert.h
+	<_mingw.h>
+
+1087746504 c:\dev\projects\xdm\sourcecode\common\entity_state.h
+	"pm_info.h"
+	"weaponinfo.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\pm_shared\pm_info.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\weaponinfo.h
+
+1239643369 source:c:\dev\projects\xdm\sourcecode\dlls\combat.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"soundent.h"
+	"decals.h"
+	"animation.h"
+	"weapons.h"
+	"func_break.h"
+	"r_efx.h"
+	"gamerules.h"
+	"globals.h"
+	"game.h"
+	"player.h"
+
+1230892074 c:\dev\projects\xdm\sourcecode\dlls\func_break.h
+
+1083688788 c:\dev\projects\xdm\sourcecode\common\r_efx.h
+	"particledef.h"
+	"beamdef.h"
+	"dlight.h"
+	"cl_entity.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\particledef.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\beamdef.h
+
+1117817814 c:\dev\projects\xdm\sourcecode\common\dlight.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\cl_entity.h
+	"entity_state.h"
+	"progs.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\engine\progs.h
+	"progdefs.h"
+	"event_flags.h"
+	"event_args.h"
+	"entity_state.h"
+	"edict.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\event_args.h
+
+1238365807 source:c:\dev\projects\xdm\sourcecode\dlls\defaultai.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"defaultai.h"
+	"soundent.h"
+	"nodes.h"
+	"scripted.h"
+
+1239643378 source:c:\dev\projects\xdm\sourcecode\dlls\doors.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"doors.h"
+
+1239644485 source:c:\dev\projects\xdm\sourcecode\dlls\effects.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"customentity.h"
+	"effects.h"
+	"weapons.h"
+	"decals.h"
+	"func_break.h"
+	"shake.h"
+	"studio.h"
+	"player.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\engine\shake.h
+
+1168698320 source:c:\dev\projects\xdm\sourcecode\dlls\effects_new.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"customentity.h"
+	"effects.h"
+	"decals.h"
+	"player.h"
+
+1176204058 source:c:\dev\projects\xdm\sourcecode\dlls\entconfig.cpp
+	"extdll.h"
+	"util.h"
+	"const.h"
+	"entconfig.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\entconfig.h
+
+1239644276 source:c:\dev\projects\xdm\sourcecode\dlls\environment.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"customentity.h"
+	"player.h"
+	"globals.h"
+	"effects.h"
+	"environment.h"
+	"game.h"
+	"gamerules.h"
+	"flamecloud.h"
+	"weapons.h"
+
+1121266106 c:\dev\projects\xdm\sourcecode\dlls\environment.h
+
+1217930474 c:\dev\projects\xdm\sourcecode\dlls\projectiles\flamecloud.h
+
+1239644284 source:c:\dev\projects\xdm\sourcecode\dlls\explode.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"decals.h"
+	"weapons.h"
+	"explode.h"
+
+1239644522 source:c:\dev\projects\xdm\sourcecode\dlls\func_break.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"func_break.h"
+	"decals.h"
+	"weapons.h"
+	"explode.h"
+	"game.h"
+	"sound.h"
+	"soundent.h"
+	"gamerules.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\sound.h
+
+1218017066 source:c:\dev\projects\xdm\sourcecode\dlls\func_tank.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"effects.h"
+	"weapons.h"
+	"explode.h"
+	"player.h"
+	"soundent.h"
+
+1239645671 source:c:\dev\projects\xdm\sourcecode\dlls\fx.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"player.h"
+	"explode.h"
+	"trains.h"
+	"items.h"
+	"globals.h"
+
+1236262122 c:\dev\projects\xdm\sourcecode\dlls\trains.h
+
+1239652567 source:c:\dev\projects\xdm\sourcecode\dlls\game.cpp
+	"extdll.h"
+	"eiface.h"
+	"util.h"
+	"game.h"
+	"gamerules.h"
+	"skill.h"
+	"cbase.h"
+	"environment.h"
+
+1136196818 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\coop_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"gamerules.h"
+	"coop_gamerules.h"
+	"game.h"
+
+1110548338 c:\dev\projects\xdm\sourcecode\dlls\gamerules\coop_gamerules.h
+
+1194263458 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\ctf_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"game.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"ctf_gamerules.h"
+	"globals.h"
+
+1200856236 c:\dev\projects\xdm\sourcecode\dlls\gamerules\teamplay_gamerules.h
+
+1194263436 c:\dev\projects\xdm\sourcecode\dlls\gamerules\ctf_gamerules.h
+
+1178912366 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\dom_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"game.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"dom_gamerules.h"
+	"globals.h"
+
+1118323806 c:\dev\projects\xdm\sourcecode\dlls\gamerules\dom_gamerules.h
+
+1237042722 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"coop_gamerules.h"
+	"dom_gamerules.h"
+	"ctf_gamerules.h"
+	"lms_gamerules.h"
+	"skill.h"
+	"game.h"
+	"globals.h"
+
+1194263182 c:\dev\projects\xdm\sourcecode\dlls\gamerules\lms_gamerules.h
+
+1238365872 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\lms_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"globals.h"
+	"lms_gamerules.h"
+	"voice_gamemgr.h"
+
+1238365728 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\maprules.cpp
+	"extdll.h"
+	"eiface.h"
+	"util.h"
+	"gamerules.h"
+	"maprules.h"
+	"cbase.h"
+	"player.h"
+	"globals.h"
+	"shake.h"
+
+1110212736 c:\dev\projects\xdm\sourcecode\dlls\gamerules\maprules.h
+
+1237042707 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\multiplay_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"skill.h"
+	"game.h"
+	"items.h"
+	"voice_gamemgr.h"
+	"hltv.h"
+	"globals.h"
+	"mapcycle.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\hltv.h
+
+1200846488 c:\dev\projects\xdm\sourcecode\dlls\mapcycle.h
+
+1238365923 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\singleplay_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"skill.h"
+	"items.h"
+	"game.h"
+
+1238365715 source:c:\dev\projects\xdm\sourcecode\dlls\gamerules\teamplay_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"game.h"
+	"colors.h"
+	"globals.h"
+	"voice_gamemgr.h"
+
+1110049184 c:\dev\projects\xdm\sourcecode\common\colors.h
+
+1239652469 source:c:\dev\projects\xdm\sourcecode\dlls\gibs.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"func_break.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"globals.h"
+
+1237043443 source:c:\dev\projects\xdm\sourcecode\dlls\globals.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"soundent.h"
+
+1117639968 source:c:\dev\projects\xdm\sourcecode\dlls\h_ai.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"game.h"
+
+1222348780 source:c:\dev\projects\xdm\sourcecode\dlls\h_battery.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"skill.h"
+	"gamerules.h"
+
+1217926958 source:c:\dev\projects\xdm\sourcecode\dlls\h_cycler.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"animation.h"
+	"weapons.h"
+	"player.h"
+	"gamerules.h"
+
+1115390348 source:c:\dev\projects\xdm\sourcecode\dlls\healthkit.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"player.h"
+	"items.h"
+	"gamerules.h"
+	"globals.h"
+
+1239645642 source:c:\dev\projects\xdm\sourcecode\dlls\items.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"player.h"
+	"skill.h"
+	"items.h"
+	"gamerules.h"
+	"globals.h"
+
+1239644317 source:c:\dev\projects\xdm\sourcecode\dlls\items_new.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"items.h"
+	"shake.h"
+	"game.h"
+	"gamerules.h"
+
+1109875444 source:c:\dev\projects\xdm\sourcecode\dlls\lights.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+
+1200849514 source:c:\dev\projects\xdm\sourcecode\dlls\mapcycle.cpp
+	"extdll.h"
+	"util.h"
+	"mapcycle.h"
+
+1239644464 source:c:\dev\projects\xdm\sourcecode\dlls\monstermaker.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"saverestore.h"
+
+1239644104 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\aflock.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"squadmonster.h"
+
+1237040850 c:\dev\projects\xdm\sourcecode\dlls\squadmonster.h
+	"basemonster.h"
+
+1230892380 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\agrunt.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"squadmonster.h"
+	"weapons.h"
+	"soundent.h"
+	"hornet.h"
+
+1217931490 c:\dev\projects\xdm\sourcecode\dlls\projectiles\hornet.h
+
+1239645652 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\apache.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"effects.h"
+
+1239644323 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\barnacle.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"player.h"
+	"decals.h"
+	"soundent.h"
+
+1239645660 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\barney.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"talkmonster.h"
+	"schedule.h"
+	"defaultai.h"
+	"scripted.h"
+	"weapons.h"
+	"soundent.h"
+
+1217931562 c:\dev\projects\xdm\sourcecode\dlls\talkmonster.h
+	"monsters.h"
+
+1230892402 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\bigmomma.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"decals.h"
+	"weapons.h"
+	"game.h"
+
+1218018530 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\bloater.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"weapons.h"
+
+1236530044 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\bullsquid.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"nodes.h"
+	"effects.h"
+	"decals.h"
+	"soundent.h"
+	"game.h"
+	"weapons.h"
+
+1217997484 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\cat.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1239645788 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\controller.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"effects.h"
+	"schedule.h"
+	"weapons.h"
+	"squadmonster.h"
+
+1115311586 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\deadhev.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+
+1175707430 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\diablo.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"soundent.h"
+
+1237726238 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\flyingmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"flyingmonster.h"
+
+1237726228 c:\dev\projects\xdm\sourcecode\dlls\flyingmonster.h
+
+1230892308 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\gargantua.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"customentity.h"
+	"weapons.h"
+	"effects.h"
+	"soundent.h"
+	"decals.h"
+	"explode.h"
+	"func_break.h"
+	"gamerules.h"
+
+1106230518 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\genericmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1230892310 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\gman.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1218358722 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\hassassin.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"squadmonster.h"
+	"weapons.h"
+	"soundent.h"
+	"game.h"
+
+1239645799 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\headcrab.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"game.h"
+
+1230896366 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\hgrunt.cpp
+	"extdll.h"
+	"plane.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"animation.h"
+	"squadmonster.h"
+	"weapons.h"
+	"talkmonster.h"
+	"soundent.h"
+	"globals.h"
+	"customentity.h"
+	"sound.h"
+
+1068916560 c:\dev\projects\xdm\sourcecode\dlls\plane.h
+
+1233271162 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\houndeye.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"animation.h"
+	"nodes.h"
+	"squadmonster.h"
+	"soundent.h"
+	"game.h"
+	"weapons.h"
+
+1237726245 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\ichthyosaur.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"flyingmonster.h"
+	"soundent.h"
+	"animation.h"
+	"effects.h"
+	"globals.h"
+
+1230892324 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\islave.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"squadmonster.h"
+	"schedule.h"
+	"weapons.h"
+	"soundent.h"
+	"customentity.h"
+	"decals.h"
+
+1239645810 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\leech.cpp
+	"float.h"
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"colors.h"
+	"effects.h"
+
+1198769018 c:\dev\mingw\include\float.h
+	<_mingw.h>
+
+1239644468 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\monsters.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"weapons.h"
+	"scripted.h"
+	"squadmonster.h"
+	"decals.h"
+	"soundent.h"
+	"gamerules.h"
+	"game.h"
+
+1068916560 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\monsterstate.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"soundent.h"
+
+1239645839 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\nihilanth.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"nodes.h"
+	"effects.h"
+	"gamerules.h"
+
+1239645845 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\osprey.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"decals.h"
+	"monsters.h"
+	"weapons.h"
+	"nodes.h"
+	"soundent.h"
+	"effects.h"
+	"customentity.h"
+
+1118348924 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\playermonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1239645692 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\rat.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"game.h"
+
+1217997484 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\roach.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"soundent.h"
+	"decals.h"
+	"colors.h"
+
+1239645855 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\scientist.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"talkmonster.h"
+	"schedule.h"
+	"defaultai.h"
+	"scripted.h"
+	"animation.h"
+	"soundent.h"
+
+1217930996 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\squadmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"squadmonster.h"
+	"plane.h"
+
+1239645862 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\talkmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"talkmonster.h"
+	"defaultai.h"
+	"scripted.h"
+	"soundent.h"
+	"animation.h"
+
+1218358850 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\tentacle.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+
+1239645870 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\turret.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"effects.h"
+	"lightp.h"
+	"hornet.h"
+	"flamecloud.h"
+
+1230891820 c:\dev\projects\xdm\sourcecode\dlls\projectiles\lightp.h
+
+1218000122 source:c:\dev\projects\xdm\sourcecode\dlls\monsters\zombie.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1218358996 source:c:\dev\projects\xdm\sourcecode\dlls\mortar.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"weapons.h"
+	"decals.h"
+	"soundent.h"
+	"skill.h"
+	"game.h"
+
+1199283216 source:c:\dev\projects\xdm\sourcecode\dlls\nodes.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"nodes.h"
+	"animation.h"
+	"doors.h"
+	"weapons.h"
+	<unistd.h>
+
+1232473522 source:c:\dev\projects\xdm\sourcecode\dlls\observer.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"pm_shared.h"
+	"globals.h"
+
+1106230290 source:c:\dev\projects\xdm\sourcecode\dlls\pathcorner.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"trains.h"
+	"saverestore.h"
+
+1068916560 source:c:\dev\projects\xdm\sourcecode\dlls\plane.cpp
+	"extdll.h"
+	"plane.h"
+
+1239645883 source:c:\dev\projects\xdm\sourcecode\dlls\plats.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"trains.h"
+	"saverestore.h"
+
+1239644332 source:c:\dev\projects\xdm\sourcecode\dlls\player.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"trains.h"
+	"nodes.h"
+	"weapons.h"
+	"soundent.h"
+	"monsters.h"
+	"shake.h"
+	"decals.h"
+	"gamerules.h"
+	"game.h"
+	"hltv.h"
+	"items.h"
+	"globals.h"
+
+1238364069 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\agrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"decals.h"
+	"gamerules.h"
+
+1239645700 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\crossbowbolt.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"soundent.h"
+	"decals.h"
+	"skill.h"
+	"crossbowbolt.h"
+	"gamerules.h"
+	"game.h"
+
+1230891842 c:\dev\projects\xdm\sourcecode\dlls\projectiles\crossbowbolt.h
+
+1217930548 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\flamecloud.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"decals.h"
+	"flamecloud.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+	"globals.h"
+
+1239645703 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\ggrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"decals.h"
+	"player.h"
+	"effects.h"
+	"shake.h"
+	"game.h"
+	"gamerules.h"
+	"flamecloud.h"
+	"globals.h"
+
+1239645708 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\hornet.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"hornet.h"
+	"gamerules.h"
+	"game.h"
+
+1230891360 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\lgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"globals.h"
+
+1239645713 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\lightp.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"decals.h"
+	"lightp.h"
+
+1239645717 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\mtarget.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+	"skill.h"
+
+1239645720 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\orb_proj.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"decals.h"
+	"colors.h"
+	"orb_proj.h"
+
+1230890894 c:\dev\projects\xdm\sourcecode\dlls\projectiles\orb_proj.h
+
+1239645727 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\plasmaball.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"decals.h"
+	"plasmaball.h"
+
+1230891794 c:\dev\projects\xdm\sourcecode\dlls\projectiles\plasmaball.h
+
+1239645736 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\rpgrocket.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"decals.h"
+	"globals.h"
+
+1217932226 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\satchelcharge.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"player.h"
+	"soundent.h"
+
+1239645901 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\sqkgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"sqkgrenade.h"
+	"globals.h"
+
+1229419208 c:\dev\projects\xdm\sourcecode\dlls\projectiles\sqkgrenade.h
+
+1239645741 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\teleporter.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"decals.h"
+	"explode.h"
+	"teleporter.h"
+
+1230892356 c:\dev\projects\xdm\sourcecode\dlls\projectiles\teleporter.h
+
+1217997262 source:c:\dev\projects\xdm\sourcecode\dlls\projectiles\tripminegrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+
+1120637482 source:c:\dev\projects\xdm\sourcecode\dlls\saverestore.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+
+1239644154 source:c:\dev\projects\xdm\sourcecode\dlls\scripted.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"schedule.h"
+	"scripted.h"
+	"defaultai.h"
+
+1232730236 source:c:\dev\projects\xdm\sourcecode\dlls\skill.cpp
+	"extdll.h"
+	"util.h"
+	"skill.h"
+
+1222349048 source:c:\dev\projects\xdm\sourcecode\dlls\sound.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapondef.h"
+	"player.h"
+	"talkmonster.h"
+	"gamerules.h"
+	"func_break.h"
+	"sound.h"
+	"game.h"
+
+1146763658 source:c:\dev\projects\xdm\sourcecode\dlls\soundent.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"soundent.h"
+	"gamerules.h"
+
+1139743782 source:c:\dev\projects\xdm\sourcecode\dlls\spectator.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"spectator.h"
+
+1138103568 source:c:\dev\projects\xdm\sourcecode\dlls\subs.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"nodes.h"
+	"doors.h"
+
+1239645944 source:c:\dev\projects\xdm\sourcecode\dlls\triggers.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"saverestore.h"
+	"trains.h"
+	"gamerules.h"
+	"game.h"
+	"globals.h"
+	"soundent.h"
+
+1090876474 source:c:\dev\projects\xdm\sourcecode\dlls\triggers_new.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"saverestore.h"
+	"trains.h"
+	"gamerules.h"
+	"game.h"
+
+1238365782 source:c:\dev\projects\xdm\sourcecode\dlls\util.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"shake.h"
+	"decals.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"colors.h"
+	"globals.h"
+
+1230897706 source:c:\dev\projects\xdm\sourcecode\dlls\util_xhl.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"game.h"
+	"colors.h"
+	"animation.h"
+	"weapons.h"
+	"globals.h"
+
+1239645762 source:c:\dev\projects\xdm\sourcecode\dlls\weaponbox.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+
+1239645918 source:c:\dev\projects\xdm\sourcecode\dlls\weapons.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"monsters.h"
+	"weapons.h"
+	"globals.h"
+	"soundent.h"
+	"decals.h"
+	"gamerules.h"
+	"game.h"
+
+1218018446 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\alauncher.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+
+1119475042 c:\dev\projects\xdm\sourcecode\common\weaponslots.h
+
+1218134692 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\beamrifle.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"skill.h"
+	"globals.h"
+	"game.h"
+	"soundent.h"
+
+1139511286 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\chemgun.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"lightp.h"
+
+1139511282 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\crossbow.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"crossbowbolt.h"
+
+1239644426 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\crowbar.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+	"game.h"
+	"soundent.h"
+	"globals.h"
+
+1141480630 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\displacer.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"teleporter.h"
+
+1217916182 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\egon.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"effects.h"
+	"customentity.h"
+	"gamerules.h"
+	"game.h"
+
+1218358698 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\flamethrower.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"flamecloud.h"
+
+1231187158 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\gauss.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"shake.h"
+	"gamerules.h"
+	"game.h"
+	"globals.h"
+
+1218018464 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\glauncher.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"gamerules.h"
+
+1230896108 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\glock.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+
+1217929614 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\handgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"globals.h"
+
+1139511226 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\hornetgun.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+	"hornet.h"
+
+1230896048 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\mp5.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"gamerules.h"
+
+1139511222 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\nanosword.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+
+1175530500 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\orb.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"orb_proj.h"
+
+1217917270 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\plasma.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"weaponslots.h"
+	"customentity.h"
+	"game.h"
+	"gamerules.h"
+	"skill.h"
+
+1230898412 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\python.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+
+1239644430 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\rpg.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"game.h"
+
+1217870204 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\satchel.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+
+1230896068 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\shotgun.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+
+1175529828 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\squeakgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"sqkgrenade.h"
+
+1175531392 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\strtarget.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+
+1217917276 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\sword.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"game.h"
+	"globals.h"
+
+1222348542 source:c:\dev\projects\xdm\sourcecode\dlls\weapons\tripmine.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"effects.h"
+	"gamerules.h"
+	"game.h"
+
+1238365936 source:c:\dev\projects\xdm\sourcecode\dlls\world.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"soundent.h"
+	"client.h"
+	"decals.h"
+	"skill.h"
+	"effects.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"globals.h"
+	"game.h"
+	"maprules.h"
+	"entconfig.h"
+	"func_break.h"
+	"shake.h"
+
+1230892428 source:c:\dev\projects\xdm\sourcecode\dlls\xen.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"animation.h"
+	"effects.h"
+	"weapons.h"
+	"player.h"
+	"shake.h"
+	"colors.h"
+
+1067077500 source:c:\dev\projects\xdm\sourcecode\game_shared\voice_banmgr.cpp
+	<string.h>
+	<stdio.h>
+	"voice_banmgr.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\game_shared\voice_banmgr.h
+
+1067077500 source:c:\dev\projects\xdm\sourcecode\game_shared\voice_gamemgr.cpp
+	"voice_gamemgr.h"
+	<string.h>
+	<assert.h>
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+
+1224685400 source:c:\dev\projects\xdm\sourcecode\pm_shared\pm_debug.c
+	"mathlib.h"
+	"const.h"
+	"usercmd.h"
+	"pm_defs.h"
+	"pm_shared.h"
+	"pm_movevars.h"
+	"pm_debug.h"
+
+1239646509 c:\dev\projects\xdm\sourcecode\common\mathlib.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\usercmd.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\pm_shared\pm_defs.h
+	"pm_info.h"
+	"pmtrace.h"
+	"usercmd.h"
+
+1067077500 c:\dev\projects\xdm\sourcecode\common\pmtrace.h
+
+1239646873 c:\dev\projects\xdm\sourcecode\pm_shared\pm_movevars.h
+
+1067077500 c:\dev\projects\xdm\sourcecode\pm_shared\pm_debug.h
+
+1224685394 source:c:\dev\projects\xdm\sourcecode\pm_shared\pm_math.c
+	"mathlib.h"
+	"const.h"
+	<math.h>
+
+1232730058 source:c:\dev\projects\xdm\sourcecode\pm_shared\pm_shared.c
+	<assert.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	"mathlib.h"
+	"const.h"
+	"usercmd.h"
+	"pm_defs.h"
+	"pm_shared.h"
+	"pm_shared.h"
+	"pm_movevars.h"
+	"pm_debug.h"
+	"pm_materials.h"
+	"com_model.h"
+
+1239646555 c:\dev\projects\xdm\sourcecode\common\com_model.h
+	"custom.h"
+
+1258737812 source:c:\dev\cygwin\sourcecode\dlls\xdm.rc
+	"resource.h"
+	"afxres.h"
+
+1269851239 c:\dev\cygwin\sourcecode\dlls\resource.h
+
+1067077500 c:\dev\cygwin\sourcecode\common\basetsd.h
+
+1269890465 source:c:\dev\cygwin\sourcecode\dlls\ai_basenpc_schedule.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"animation.h"
+	"scripted.h"
+	"nodes.h"
+	"defaultai.h"
+	"soundent.h"
+	"game.h"
+
+1269890408 c:\dev\cygwin\sourcecode\dlls\extdll.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<direct.h>
+	<sys/stat.h>
+	<math.h>
+	"windows.h"
+	<limits.h>
+	"stdlib.h"
+	"math.h"
+	"vector.h"
+	"const.h"
+	"progdefs.h"
+	"edict.h"
+	"eiface.h"
+	"cdll_dll.h"
+
+1260186660 c:\dev\cygwin\usr\include\stdio.h
+	"_ansi.h"
+	<stddef.h>
+	<stdarg.h>
+	<sys/reent.h>
+	<sys/types.h>
+	<sys/stdio.h>
+
+1260186660 c:\dev\cygwin\usr\include\_ansi.h
+	<newlib.h>
+	<sys/config.h>
+
+1260186660 c:\dev\cygwin\usr\include\newlib.h
+
+1260186660 c:\dev\cygwin\usr\include\sys\config.h
+	<machine/ieeefp.h>
+	<cygwin/config.h>
+
+1260186660 c:\dev\cygwin\usr\include\machine\ieeefp.h
+
+1260186661 c:\dev\cygwin\usr\include\cygwin\config.h
+	"../tlsoffsets.h"
+
+1260186660 c:\dev\cygwin\usr\include\sys\reent.h
+	<_ansi.h>
+	<sys/_types.h>
+	<sys/types.h>
+	<sys/custom_file.h>
+	<assert.h>
+
+1260186660 c:\dev\cygwin\usr\include\sys\_types.h
+	<machine/_types.h>
+	<sys/lock.h>
+	<stddef.h>
+
+1260186660 c:\dev\cygwin\usr\include\machine\_types.h
+	<machine/_default_types.h>
+
+1260186660 c:\dev\cygwin\usr\include\machine\_default_types.h
+	<limits.h>
+
+1260186660 c:\dev\cygwin\usr\include\limits.h
+	<features.h>
+
+1260186660 c:\dev\cygwin\usr\include\features.h
+	<sys/cdefs.h>
+	<sys/features.h>
+
+1260186660 c:\dev\cygwin\usr\include\sys\cdefs.h
+
+1260186660 c:\dev\cygwin\usr\include\sys\features.h
+
+1260186661 c:\dev\cygwin\usr\include\sys\lock.h
+
+1260186660 c:\dev\cygwin\usr\include\sys\types.h
+	<_ansi.h>
+	<machine/_types.h>
+	<sys/_types.h>
+	<stddef.h>
+	<machine/types.h>
+	<sys/features.h>
+	<sys/sched.h>
+	<cygwin/types.h>
+
+1260186660 c:\dev\cygwin\usr\include\machine\types.h
+	<machine/_types.h>
+
+1260186661 c:\dev\cygwin\usr\include\sys\sched.h
+	<sched.h>
+
+1260186660 c:\dev\cygwin\usr\include\sched.h
+	<time.h>
+
+1260186660 c:\dev\cygwin\usr\include\time.h
+	"_ansi.h"
+	<sys/reent.h>
+	<machine/time.h>
+	<stddef.h>
+	<sys/types.h>
+	<sys/features.h>
+	<cygwin/time.h>
+	<signal.h>
+
+1260186660 c:\dev\cygwin\usr\include\machine\time.h
+	<sys/types.h>
+
+1260186661 c:\dev\cygwin\usr\include\cygwin\time.h
+
+1260186660 c:\dev\cygwin\usr\include\signal.h
+	"_ansi.h"
+	<sys/signal.h>
+
+1260186660 c:\dev\cygwin\usr\include\sys\signal.h
+	"_ansi.h"
+	<sys/features.h>
+	<sys/types.h>
+	<cygwin/signal.h>
+	<signal.h>
+
+1260186661 c:\dev\cygwin\usr\include\cygwin\signal.h
+
+1260186661 c:\dev\cygwin\usr\include\cygwin\types.h
+	<sys/sysmacros.h>
+	<stdint.h>
+	<endian.h>
+
+1260186661 c:\dev\cygwin\usr\include\sys\sysmacros.h
+
+1260186660 c:\dev\cygwin\usr\include\stdint.h
+
+1260186660 c:\dev\cygwin\usr\include\endian.h
+	<sys/config.h>
+
+1260186660 c:\dev\cygwin\usr\include\sys\custom_file.h
+
+1260186660 c:\dev\cygwin\usr\include\assert.h
+	"_ansi.h"
+
+1260186661 c:\dev\cygwin\usr\include\sys\stdio.h
+	<sys/cdefs.h>
+	<sys/lock.h>
+
+1260186660 c:\dev\cygwin\usr\include\stdlib.h
+	<machine/ieeefp.h>
+	"_ansi.h"
+	<stddef.h>
+	<sys/reent.h>
+	<machine/stdlib.h>
+	<alloca.h>
+	<cygwin/stdlib.h>
+
+1260186661 c:\dev\cygwin\usr\include\machine\stdlib.h
+
+1260186660 c:\dev\cygwin\usr\include\alloca.h
+	"_ansi.h"
+	<sys/reent.h>
+
+1260186661 c:\dev\cygwin\usr\include\cygwin\stdlib.h
+	<cygwin/wait.h>
+
+1260186661 c:\dev\cygwin\usr\include\cygwin\wait.h
+
+1260186660 c:\dev\cygwin\usr\include\string.h
+	"_ansi.h"
+	<sys/reent.h>
+	<stddef.h>
+	<sys/string.h>
+
+1260186660 c:\dev\cygwin\usr\include\sys\string.h
+
+1260186660 c:\dev\cygwin\usr\include\ctype.h
+	"_ansi.h"
+
+1260186660 c:\dev\cygwin\usr\include\math.h
+	<sys/reent.h>
+	<machine/ieeefp.h>
+	"_ansi.h"
+	<machine/fastmath.h>
+
+1260186660 c:\dev\cygwin\usr\include\machine\fastmath.h
+
+1269861711 c:\dev\cygwin\sourcecode\common\vector.h
+	<stdio.h>
+	<math.h>
+
+1269861710 c:\dev\cygwin\sourcecode\common\const.h
+	"in_buttons.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\in_buttons.h
+
+1246540368 c:\dev\cygwin\sourcecode\engine\progdefs.h
+
+1246540360 c:\dev\cygwin\sourcecode\engine\edict.h
+	"progdefs.h"
+
+1134051394 c:\dev\cygwin\sourcecode\engine\eiface.h
+	"archtypes.h"
+	<stdio.h>
+	"custom.h"
+	"cvardef.h"
+	"Sequence.h"
+	"../common/crc.h"
+
+1083961190 c:\dev\cygwin\sourcecode\engine\archtypes.h
+
+1246540288 c:\dev\cygwin\sourcecode\engine\custom.h
+	"const.h"
+	"crc.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\crc.h
+
+1269861711 c:\dev\cygwin\sourcecode\common\cvardef.h
+
+1246560340 c:\dev\cygwin\sourcecode\engine\sequence.h
+
+1269861710 c:\dev\cygwin\sourcecode\common\cdll_dll.h
+
+1269698379 c:\dev\cygwin\sourcecode\dlls\util.h
+	"activity.h"
+	"enginecallback.h"
+
+1269851233 c:\dev\cygwin\sourcecode\dlls\activity.h
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\enginecallback.h
+	"event_flags.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\event_flags.h
+
+1269885577 c:\dev\cygwin\sourcecode\dlls\cbase.h
+	"saverestore.h"
+	"schedule.h"
+	"monsterevent.h"
+	"basemonster.h"
+
+1269851242 c:\dev\cygwin\sourcecode\dlls\saverestore.h
+
+1269851242 c:\dev\cygwin\sourcecode\dlls\schedule.h
+
+1269851236 c:\dev\cygwin\sourcecode\dlls\monsterevent.h
+
+1269851234 c:\dev\cygwin\sourcecode\dlls\basemonster.h
+
+1269851237 c:\dev\cygwin\sourcecode\dlls\monsters.h
+	"skill.h"
+	"basemonster.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\skill.h
+
+1269851234 c:\dev\cygwin\sourcecode\dlls\animation.h
+	"monsterevent.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\scripted.h
+	"scriptevent.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\scriptevent.h
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\nodes.h
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\defaultai.h
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\soundent.h
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\game.h
+
+1269855416 source:c:\dev\cygwin\sourcecode\dlls\airtank.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"gamerules.h"
+
+1269851244 c:\dev\cygwin\sourcecode\dlls\weapons.h
+	"effects.h"
+	"weapondef.h"
+	"basemonster.h"
+
+1269861916 c:\dev\cygwin\sourcecode\dlls\effects.h
+
+1269861711 c:\dev\cygwin\sourcecode\common\weapondef.h
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\gamerules\gamerules.h
+	"gamedefs.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\gamedefs.h
+
+1269855505 source:c:\dev\cygwin\sourcecode\dlls\ammo.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"gamerules.h"
+	"explode.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\explode.h
+
+1269851234 source:c:\dev\cygwin\sourcecode\dlls\animating.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"animation.h"
+	"saverestore.h"
+
+1269885238 source:c:\dev\cygwin\sourcecode\dlls\animation.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../common/nowin.h"
+	"extdll.h"
+	"studio.h"
+	"activity.h"
+	"activitymap.h"
+	"animation.h"
+	"scriptevent.h"
+	"enginecallback.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\nowin.h
+	<unistd.h>
+
+1260186660 c:\dev\cygwin\usr\include\unistd.h
+	<sys/unistd.h>
+
+1260186660 c:\dev\cygwin\usr\include\sys\unistd.h
+	<_ansi.h>
+	<sys/types.h>
+	<sys/_types.h>
+	<stddef.h>
+	<getopt.h>
+	<sys/features.h>
+
+1260186660 c:\dev\cygwin\usr\include\getopt.h
+
+1175256394 c:\dev\cygwin\sourcecode\engine\studio.h
+	"studio_event.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\studio_event.h
+
+1269851234 c:\dev\cygwin\sourcecode\dlls\activitymap.h
+
+1269855721 source:c:\dev\cygwin\sourcecode\dlls\bmodels.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"doors.h"
+	"game.h"
+	"player.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\doors.h
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\player.h
+	"pm_materials.h"
+
+1269861809 c:\dev\cygwin\sourcecode\pm_shared\pm_materials.h
+
+1269885367 source:c:\dev\cygwin\sourcecode\dlls\buttons.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"doors.h"
+
+1269851234 source:c:\dev\cygwin\sourcecode\dlls\cbase.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"client.h"
+	"decals.h"
+	"gamerules.h"
+	"game.h"
+	"skill.h"
+	"studio.h"
+
+1269851234 c:\dev\cygwin\sourcecode\dlls\client.h
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\decals.h
+
+1269855946 source:c:\dev\cygwin\sourcecode\dlls\chasecam.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"gamerules.h"
+	"player.h"
+	"client.h"
+
+1269851234 source:c:\dev\cygwin\sourcecode\dlls\client.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"spectator.h"
+	"client.h"
+	"soundent.h"
+	"gamerules.h"
+	"game.h"
+	"customentity.h"
+	"weapons.h"
+	"globals.h"
+	"items.h"
+	"pm_shared.h"
+	"voice_gamemgr.h"
+	"entity_state.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\spectator.h
+
+1067081100 c:\dev\cygwin\sourcecode\engine\customentity.h
+
+1269851236 c:\dev\cygwin\sourcecode\dlls\globals.h
+
+1269851236 c:\dev\cygwin\sourcecode\dlls\items.h
+
+1269861809 c:\dev\cygwin\sourcecode\pm_shared\pm_shared.h
+
+1269861779 c:\dev\cygwin\sourcecode\game_shared\voice_gamemgr.h
+	"voice_common.h"
+
+1269861774 c:\dev\cygwin\sourcecode\game_shared\voice_common.h
+	"bitvec.h"
+
+1246540330 c:\dev\cygwin\sourcecode\game_shared\bitvec.h
+	<assert.h>
+
+1269861711 c:\dev\cygwin\sourcecode\common\entity_state.h
+	"pm_info.h"
+	"weaponinfo.h"
+
+1269861808 c:\dev\cygwin\sourcecode\pm_shared\pm_info.h
+
+1269861711 c:\dev\cygwin\sourcecode\common\weaponinfo.h
+
+1269885621 source:c:\dev\cygwin\sourcecode\dlls\combat.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"soundent.h"
+	"decals.h"
+	"animation.h"
+	"weapons.h"
+	"func_break.h"
+	"r_efx.h"
+	"gamerules.h"
+	"globals.h"
+	"game.h"
+	"player.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\func_break.h
+
+1269861711 c:\dev\cygwin\sourcecode\common\r_efx.h
+	"particledef.h"
+	"beamdef.h"
+	"dlight.h"
+	"cl_entity.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\particledef.h
+
+1269861710 c:\dev\cygwin\sourcecode\common\beamdef.h
+
+1269861711 c:\dev\cygwin\sourcecode\common\dlight.h
+
+1269861710 c:\dev\cygwin\sourcecode\common\cl_entity.h
+	"entity_state.h"
+	"progs.h"
+
+1067081100 c:\dev\cygwin\sourcecode\engine\progs.h
+	"progdefs.h"
+	"event_flags.h"
+	"event_args.h"
+	"entity_state.h"
+	"edict.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\event_args.h
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\defaultai.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"defaultai.h"
+	"soundent.h"
+	"nodes.h"
+	"scripted.h"
+
+1269856095 source:c:\dev\cygwin\sourcecode\dlls\doors.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"doors.h"
+
+1269885649 source:c:\dev\cygwin\sourcecode\dlls\effects.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"customentity.h"
+	"effects.h"
+	"weapons.h"
+	"decals.h"
+	"func_break.h"
+	"shake.h"
+	"studio.h"
+	"player.h"
+	"gamerules.h"
+
+1067081100 c:\dev\cygwin\sourcecode\engine\shake.h
+
+1269856410 source:c:\dev\cygwin\sourcecode\dlls\effects_new.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"customentity.h"
+	"effects.h"
+	"decals.h"
+	"player.h"
+
+1269889412 source:c:\dev\cygwin\sourcecode\dlls\entconfig.cpp
+	"extdll.h"
+	"util.h"
+	"const.h"
+	"entconfig.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\entconfig.h
+
+1269888345 source:c:\dev\cygwin\sourcecode\dlls\environment.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"customentity.h"
+	"player.h"
+	"globals.h"
+	"effects.h"
+	"environment.h"
+	"game.h"
+	"gamerules.h"
+	"flamecloud.h"
+	"weapons.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\environment.h
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\flamecloud.h
+
+1269862854 source:c:\dev\cygwin\sourcecode\dlls\explode.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"decals.h"
+	"weapons.h"
+	"explode.h"
+
+1269888354 source:c:\dev\cygwin\sourcecode\dlls\func_break.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"func_break.h"
+	"decals.h"
+	"weapons.h"
+	"explode.h"
+	"game.h"
+	"sound.h"
+	"soundent.h"
+	"gamerules.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\sound.h
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\func_tank.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"effects.h"
+	"weapons.h"
+	"explode.h"
+	"player.h"
+	"soundent.h"
+	"lightp.h"
+	"hornet.h"
+	"flamecloud.h"
+	"plasmaball.h"
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\lightp.h
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\hornet.h
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\plasmaball.h
+
+1269856534 source:c:\dev\cygwin\sourcecode\dlls\fx.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"player.h"
+	"explode.h"
+	"trains.h"
+	"items.h"
+	"globals.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\trains.h
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\game.cpp
+	"extdll.h"
+	<time.h>
+	"eiface.h"
+	"util.h"
+	"game.h"
+	"gamerules.h"
+	"skill.h"
+	"cbase.h"
+	"environment.h"
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\gamerules\coop_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"gamerules.h"
+	"coop_gamerules.h"
+	"globals.h"
+	"game.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\gamerules\coop_gamerules.h
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\gamerules\ctf_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"game.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"ctf_gamerules.h"
+	"globals.h"
+
+1269851236 c:\dev\cygwin\sourcecode\dlls\gamerules\teamplay_gamerules.h
+	"colors.h"
+
+1269861710 c:\dev\cygwin\sourcecode\common\colors.h
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\gamerules\ctf_gamerules.h
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\gamerules\dom_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"game.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"dom_gamerules.h"
+	"globals.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\gamerules\dom_gamerules.h
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\gamerules\gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"skill.h"
+	"game.h"
+	"globals.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"coop_gamerules.h"
+	"dom_gamerules.h"
+	"ctf_gamerules.h"
+	"lms_gamerules.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\gamerules\lms_gamerules.h
+
+1269851235 source:c:\dev\cygwin\sourcecode\dlls\gamerules\lms_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"globals.h"
+	"lms_gamerules.h"
+	"voice_gamemgr.h"
+
+1269856572 source:c:\dev\cygwin\sourcecode\dlls\gamerules\maprules.cpp
+	"extdll.h"
+	"eiface.h"
+	"util.h"
+	"gamerules.h"
+	"maprules.h"
+	"cbase.h"
+	"player.h"
+	"globals.h"
+	"shake.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\gamerules\maprules.h
+
+1269889323 source:c:\dev\cygwin\sourcecode\dlls\gamerules\multiplay_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"skill.h"
+	"game.h"
+	"items.h"
+	"voice_gamemgr.h"
+	"hltv.h"
+	"globals.h"
+	"mapcycle.h"
+	"pm_shared.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\hltv.h
+
+1269851236 c:\dev\cygwin\sourcecode\dlls\mapcycle.h
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\gamerules\singleplay_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"skill.h"
+	"items.h"
+	"game.h"
+
+1269889342 source:c:\dev\cygwin\sourcecode\dlls\gamerules\teamplay_gamerules.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"game.h"
+	"colors.h"
+	"globals.h"
+	"voice_gamemgr.h"
+
+1269856637 source:c:\dev\cygwin\sourcecode\dlls\gibs.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"func_break.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"globals.h"
+	"game.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\globals.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"soundent.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\h_ai.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"game.h"
+
+1269888584 source:c:\dev\cygwin\sourcecode\dlls\h_battery.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"skill.h"
+	"gamerules.h"
+
+1269856691 source:c:\dev\cygwin\sourcecode\dlls\h_cycler.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"animation.h"
+	"weapons.h"
+	"player.h"
+	"gamerules.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\h_export.cpp
+	"windef.h"
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+
+1269856721 source:c:\dev\cygwin\sourcecode\dlls\healthkit.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"player.h"
+	"items.h"
+	"gamerules.h"
+	"globals.h"
+
+1269856762 source:c:\dev\cygwin\sourcecode\dlls\items.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"player.h"
+	"skill.h"
+	"items.h"
+	"gamerules.h"
+	"globals.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\items_new.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"items.h"
+	"shake.h"
+	"game.h"
+	"gamerules.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\lights.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\mapcycle.cpp
+	"extdll.h"
+	"util.h"
+	"mapcycle.h"
+
+1269856842 source:c:\dev\cygwin\sourcecode\dlls\monstermaker.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"saverestore.h"
+
+1269856987 source:c:\dev\cygwin\sourcecode\dlls\monsters\aflock.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"squadmonster.h"
+	"gamerules.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\squadmonster.h
+	"basemonster.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\agrunt.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"squadmonster.h"
+	"weapons.h"
+	"soundent.h"
+	"hornet.h"
+
+1269857061 source:c:\dev\cygwin\sourcecode\dlls\monsters\apache.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"effects.h"
+
+1269857093 source:c:\dev\cygwin\sourcecode\dlls\monsters\barnacle.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"player.h"
+	"decals.h"
+	"soundent.h"
+
+1269857125 source:c:\dev\cygwin\sourcecode\dlls\monsters\barney.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"talkmonster.h"
+	"schedule.h"
+	"defaultai.h"
+	"scripted.h"
+	"weapons.h"
+	"soundent.h"
+
+1269851243 c:\dev\cygwin\sourcecode\dlls\talkmonster.h
+	"monsters.h"
+
+1269857143 source:c:\dev\cygwin\sourcecode\dlls\monsters\bigmomma.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"decals.h"
+	"weapons.h"
+	"game.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\bloater.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"weapons.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\bullsquid.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"nodes.h"
+	"effects.h"
+	"decals.h"
+	"soundent.h"
+	"game.h"
+	"weapons.h"
+
+1269857160 source:c:\dev\cygwin\sourcecode\dlls\monsters\cat.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1269857218 source:c:\dev\cygwin\sourcecode\dlls\monsters\controller.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"effects.h"
+	"schedule.h"
+	"weapons.h"
+	"squadmonster.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\deadhev.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\diablo.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"soundent.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\flyingmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"flyingmonster.h"
+
+1269851235 c:\dev\cygwin\sourcecode\dlls\flyingmonster.h
+
+1269888624 source:c:\dev\cygwin\sourcecode\dlls\monsters\gargantua.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"customentity.h"
+	"weapons.h"
+	"effects.h"
+	"soundent.h"
+	"decals.h"
+	"explode.h"
+	"func_break.h"
+	"gamerules.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\genericmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\gman.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1269851236 source:c:\dev\cygwin\sourcecode\dlls\monsters\hassassin.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"squadmonster.h"
+	"weapons.h"
+	"soundent.h"
+	"game.h"
+
+1269857249 source:c:\dev\cygwin\sourcecode\dlls\monsters\headcrab.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"game.h"
+
+1269888653 source:c:\dev\cygwin\sourcecode\dlls\monsters\hgrunt.cpp
+	"extdll.h"
+	"plane.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"animation.h"
+	"squadmonster.h"
+	"weapons.h"
+	"talkmonster.h"
+	"soundent.h"
+	"globals.h"
+	"customentity.h"
+	"sound.h"
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\plane.h
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\houndeye.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"animation.h"
+	"nodes.h"
+	"squadmonster.h"
+	"soundent.h"
+	"game.h"
+	"weapons.h"
+
+1269858051 source:c:\dev\cygwin\sourcecode\dlls\monsters\ichthyosaur.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"flyingmonster.h"
+	"soundent.h"
+	"animation.h"
+	"effects.h"
+	"globals.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\islave.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"squadmonster.h"
+	"schedule.h"
+	"weapons.h"
+	"soundent.h"
+	"customentity.h"
+	"decals.h"
+	"gamerules.h"
+
+1269858076 source:c:\dev\cygwin\sourcecode\dlls\monsters\leech.cpp
+	"float.h"
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"colors.h"
+	"effects.h"
+
+1269858166 source:c:\dev\cygwin\sourcecode\dlls\monsters\monsters.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"weapons.h"
+	"scripted.h"
+	"squadmonster.h"
+	"decals.h"
+	"soundent.h"
+	"gamerules.h"
+	"game.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\monsterstate.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"soundent.h"
+
+1269888690 source:c:\dev\cygwin\sourcecode\dlls\monsters\nihilanth.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"nodes.h"
+	"effects.h"
+	"gamerules.h"
+
+1269858317 source:c:\dev\cygwin\sourcecode\dlls\monsters\osprey.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"decals.h"
+	"monsters.h"
+	"weapons.h"
+	"nodes.h"
+	"soundent.h"
+	"effects.h"
+	"customentity.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\playermonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\rat.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"game.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\roach.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"soundent.h"
+	"decals.h"
+	"colors.h"
+
+1269858352 source:c:\dev\cygwin\sourcecode\dlls\monsters\scientist.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"talkmonster.h"
+	"schedule.h"
+	"defaultai.h"
+	"scripted.h"
+	"animation.h"
+	"soundent.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\squadmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"squadmonster.h"
+	"plane.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\talkmonster.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"talkmonster.h"
+	"defaultai.h"
+	"scripted.h"
+	"soundent.h"
+	"animation.h"
+
+1269858404 source:c:\dev\cygwin\sourcecode\dlls\monsters\tentacle.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+
+1269858615 source:c:\dev\cygwin\sourcecode\dlls\monsters\turret.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"effects.h"
+	"lightp.h"
+	"hornet.h"
+	"flamecloud.h"
+	"plasmaball.h"
+
+1269851237 source:c:\dev\cygwin\sourcecode\dlls\monsters\zombie.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"schedule.h"
+	"globals.h"
+
+1269888717 source:c:\dev\cygwin\sourcecode\dlls\mortar.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"weapons.h"
+	"decals.h"
+	"soundent.h"
+	"skill.h"
+	"game.h"
+
+1269890197 source:c:\dev\cygwin\sourcecode\dlls\nodes.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"nodes.h"
+	"animation.h"
+	"doors.h"
+	"weapons.h"
+	<unistd.h>
+
+1269851238 source:c:\dev\cygwin\sourcecode\dlls\observer.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"pm_shared.h"
+	"globals.h"
+
+1269851238 source:c:\dev\cygwin\sourcecode\dlls\pathcorner.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"trains.h"
+	"saverestore.h"
+
+1269851238 source:c:\dev\cygwin\sourcecode\dlls\plane.cpp
+	"extdll.h"
+	"plane.h"
+
+1269859155 source:c:\dev\cygwin\sourcecode\dlls\plats.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"trains.h"
+	"saverestore.h"
+
+1269859241 source:c:\dev\cygwin\sourcecode\dlls\player.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"trains.h"
+	"nodes.h"
+	"weapons.h"
+	"soundent.h"
+	"monsters.h"
+	"shake.h"
+	"decals.h"
+	"gamerules.h"
+	"game.h"
+	"hltv.h"
+	"items.h"
+	"globals.h"
+	"explode.h"
+
+1269859398 source:c:\dev\cygwin\sourcecode\dlls\projectiles\agrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"decals.h"
+	"gamerules.h"
+
+1269859763 source:c:\dev\cygwin\sourcecode\dlls\projectiles\crossbowbolt.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"soundent.h"
+	"decals.h"
+	"skill.h"
+	"crossbowbolt.h"
+	"gamerules.h"
+	"game.h"
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\crossbowbolt.h
+
+1269851238 source:c:\dev\cygwin\sourcecode\dlls\projectiles\flamecloud.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"decals.h"
+	"flamecloud.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+	"globals.h"
+
+1269859868 source:c:\dev\cygwin\sourcecode\dlls\projectiles\ggrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"decals.h"
+	"player.h"
+	"effects.h"
+	"shake.h"
+	"game.h"
+	"gamerules.h"
+	"flamecloud.h"
+	"globals.h"
+
+1269859936 source:c:\dev\cygwin\sourcecode\dlls\projectiles\hornet.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"hornet.h"
+	"gamerules.h"
+	"game.h"
+
+1269859976 source:c:\dev\cygwin\sourcecode\dlls\projectiles\lgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"globals.h"
+
+1269860004 source:c:\dev\cygwin\sourcecode\dlls\projectiles\lightp.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"decals.h"
+	"lightp.h"
+
+1269860020 source:c:\dev\cygwin\sourcecode\dlls\projectiles\mtarget.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+	"skill.h"
+
+1269860043 source:c:\dev\cygwin\sourcecode\dlls\projectiles\orb_proj.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"decals.h"
+	"colors.h"
+	"orb_proj.h"
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\orb_proj.h
+
+1269860053 source:c:\dev\cygwin\sourcecode\dlls\projectiles\plasmaball.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"decals.h"
+	"plasmaball.h"
+
+1269860087 source:c:\dev\cygwin\sourcecode\dlls\projectiles\rpgrocket.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"game.h"
+	"decals.h"
+	"globals.h"
+
+1269860126 source:c:\dev\cygwin\sourcecode\dlls\projectiles\satchelcharge.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"player.h"
+	"gamerules.h"
+	"globals.h"
+
+1269860145 source:c:\dev\cygwin\sourcecode\dlls\projectiles\sqkgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"soundent.h"
+	"gamerules.h"
+	"sqkgrenade.h"
+	"globals.h"
+	"game.h"
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\sqkgrenade.h
+
+1269862842 source:c:\dev\cygwin\sourcecode\dlls\projectiles\teleporter.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"gamerules.h"
+	"decals.h"
+	"explode.h"
+	"teleporter.h"
+
+1269851238 c:\dev\cygwin\sourcecode\dlls\projectiles\teleporter.h
+
+1269860197 source:c:\dev\cygwin\sourcecode\dlls\projectiles\tripminegrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"player.h"
+	"game.h"
+	"gamerules.h"
+
+1269851239 source:c:\dev\cygwin\sourcecode\dlls\saverestore.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+
+1269890741 source:c:\dev\cygwin\sourcecode\dlls\scripted.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"animation.h"
+	"saverestore.h"
+	"schedule.h"
+	"scripted.h"
+	"defaultai.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\skill.cpp
+	"extdll.h"
+	"util.h"
+	"skill.h"
+
+1269860333 source:c:\dev\cygwin\sourcecode\dlls\sound.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapondef.h"
+	"player.h"
+	"talkmonster.h"
+	"gamerules.h"
+	"func_break.h"
+	"sound.h"
+	"game.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\soundent.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"soundent.h"
+	"gamerules.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\spectator.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"spectator.h"
+
+1269860373 source:c:\dev\cygwin\sourcecode\dlls\subs.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"saverestore.h"
+	"nodes.h"
+	"doors.h"
+	"skill.h"
+	"gamerules.h"
+	"game.h"
+	"weapons.h"
+
+1269860660 source:c:\dev\cygwin\sourcecode\dlls\triggers.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"saverestore.h"
+	"trains.h"
+	"gamerules.h"
+	"game.h"
+	"globals.h"
+	"soundent.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\triggers_new.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"saverestore.h"
+	"trains.h"
+	"gamerules.h"
+	"game.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\util.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"shake.h"
+	"decals.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"colors.h"
+	"globals.h"
+	"game.h"
+
+1269862575 source:c:\dev\cygwin\sourcecode\dlls\util_xhl.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"game.h"
+	"colors.h"
+	"animation.h"
+	"weapons.h"
+	"globals.h"
+	<io.h>
+
+1260186660 c:\dev\cygwin\usr\include\io.h
+
+1269890764 source:c:\dev\cygwin\sourcecode\dlls\weaponbox.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+
+1269861178 source:c:\dev\cygwin\sourcecode\dlls\weapons.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"monsters.h"
+	"weapons.h"
+	"globals.h"
+	"soundent.h"
+	"decals.h"
+	"gamerules.h"
+	"game.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\alauncher.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"gamerules.h"
+	"game.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\weaponslots.h
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\beamrifle.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"skill.h"
+	"globals.h"
+	"game.h"
+	"soundent.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\chemgun.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"lightp.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\crossbow.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"crossbowbolt.h"
+
+1269861199 source:c:\dev\cygwin\sourcecode\dlls\weapons\crowbar.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+	"game.h"
+	"soundent.h"
+	"globals.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\displacer.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"teleporter.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\egon.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"effects.h"
+	"customentity.h"
+	"gamerules.h"
+	"game.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\flamethrower.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"gamerules.h"
+	"flamecloud.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\gauss.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"shake.h"
+	"gamerules.h"
+	"game.h"
+	"globals.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\glauncher.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"gamerules.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\glock.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\handgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"globals.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\hornetgun.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+	"hornet.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\mp5.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"gamerules.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\nanosword.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\orb.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"orb_proj.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\plasma.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"weaponslots.h"
+	"customentity.h"
+	"game.h"
+	"gamerules.h"
+	"skill.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\python.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+
+1269861240 source:c:\dev\cygwin\sourcecode\dlls\weapons\rpg.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"game.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\satchel.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+	"game.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\shotgun.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"gamerules.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\squeakgrenade.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"sqkgrenade.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\strtarget.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\sword.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"skill.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"soundent.h"
+	"game.h"
+	"globals.h"
+
+1269851243 source:c:\dev\cygwin\sourcecode\dlls\weapons\tripmine.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"monsters.h"
+	"weapons.h"
+	"weaponslots.h"
+	"player.h"
+	"effects.h"
+	"gamerules.h"
+	"game.h"
+
+1260186660 c:\dev\cygwin\usr\include\sys\stat.h
+	<_ansi.h>
+	<time.h>
+	<sys/types.h>
+	<cygwin/stat.h>
+
+1260186661 c:\dev\cygwin\usr\include\cygwin\stat.h
+
+1269862783 source:c:\dev\cygwin\sourcecode\dlls\projectiles\atomicdevice.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+	"weapons.h"
+	"game.h"
+	"gamerules.h"
+	"skill.h"
+
+1269861307 source:c:\dev\cygwin\sourcecode\dlls\world.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"nodes.h"
+	"soundent.h"
+	"client.h"
+	"decals.h"
+	"skill.h"
+	"effects.h"
+	"player.h"
+	"weapons.h"
+	"gamerules.h"
+	"teamplay_gamerules.h"
+	"globals.h"
+	"game.h"
+	"maprules.h"
+	"entconfig.h"
+	"func_break.h"
+	"shake.h"
+
+1269851244 source:c:\dev\cygwin\sourcecode\dlls\xen.cpp
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"animation.h"
+	"effects.h"
+	"weapons.h"
+	"player.h"
+	"shake.h"
+	"colors.h"
+
+1269890829 source:c:\dev\cygwin\sourcecode\game_shared\voice_banmgr.cpp
+	<string.h>
+	<stdio.h>
+	"voice_banmgr.h"
+
+1246541122 c:\dev\cygwin\sourcecode\game_shared\voice_banmgr.h
+
+1269861781 source:c:\dev\cygwin\sourcecode\game_shared\voice_gamemgr.cpp
+	"voice_gamemgr.h"
+	<string.h>
+	<assert.h>
+	"extdll.h"
+	"util.h"
+	"cbase.h"
+	"player.h"
+
+1269861808 source:c:\dev\cygwin\sourcecode\pm_shared\pm_debug.c
+	"mathlib.h"
+	"const.h"
+	"usercmd.h"
+	"pm_defs.h"
+	"pm_shared.h"
+	"pm_movevars.h"
+	"pm_debug.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\mathlib.h
+
+1269861711 c:\dev\cygwin\sourcecode\common\usercmd.h
+
+1269861808 c:\dev\cygwin\sourcecode\pm_shared\pm_defs.h
+	"pm_info.h"
+	"pmtrace.h"
+	"usercmd.h"
+
+1269861711 c:\dev\cygwin\sourcecode\common\pmtrace.h
+
+1269861809 c:\dev\cygwin\sourcecode\pm_shared\pm_movevars.h
+
+1269861808 c:\dev\cygwin\sourcecode\pm_shared\pm_debug.h
+
+1269861809 source:c:\dev\cygwin\sourcecode\pm_shared\pm_math.c
+	"mathlib.h"
+	"const.h"
+	<math.h>
+
+1269861809 source:c:\dev\cygwin\sourcecode\pm_shared\pm_shared.c
+	<assert.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	"mathlib.h"
+	"const.h"
+	"usercmd.h"
+	"pm_defs.h"
+	"pm_shared.h"
+	"pm_shared.h"
+	"pm_movevars.h"
+	"pm_debug.h"
+	"pm_materials.h"
+	"com_model.h"
+
+1269861710 c:\dev\cygwin\sourcecode\common\com_model.h
+	"custom.h"
+

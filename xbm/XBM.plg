@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XBM - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPC8.tmp" with contents
+[
+/nologo /MD /W4 /GX /Zi /I "..\dlls" /I "..\engine" /I "..\common" /I "..\pm_shared" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "VALVE_DLL" /D "SVDLL_NEWFUNCTIONS" /FR"release/intermediate/" /Fp"release/intermediate/XBM.pch" /YX /Fo"release/intermediate/" /Fd"release/intermediate/" /FD /c 
+"C:\Project\Tyrian_SRC\XBM\bot.cpp"
+"C:\Project\Tyrian_SRC\XBM\bot_chat.cpp"
+"C:\Project\Tyrian_SRC\XBM\bot_client.cpp"
+"C:\Project\Tyrian_SRC\XBM\bot_combat.cpp"
+"C:\Project\Tyrian_SRC\XBM\bot_commands.cpp"
+"C:\Project\Tyrian_SRC\XBM\bot_navigate.cpp"
+"C:\Project\Tyrian_SRC\XBM\dll.cpp"
+"C:\Project\Tyrian_SRC\XBM\engine.cpp"
+"C:\Project\Tyrian_SRC\XBM\h_export.cpp"
+"C:\Project\Tyrian_SRC\XBM\linkfunc.cpp"
+"C:\Project\Tyrian_SRC\XBM\namefunc.cpp"
+"C:\Project\Tyrian_SRC\XBM\util.cpp"
+"C:\Project\Tyrian_SRC\XBM\waypoint.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPC8.tmp" 
+Creating temporary file "C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPC9.tmp" with contents
+[
+/nologo /version:3.0 /subsystem:windows /dll /incremental:no /pdb:"release/XBM.pdb" /map:"release/intermediate/XBM.map" /debug /machine:I386 /def:".\XBM.def" /out:"release/XBM.dll" /implib:"release/XBM.lib" 
+.\release\intermediate\bot.obj
+.\release\intermediate\bot_chat.obj
+.\release\intermediate\bot_client.obj
+.\release\intermediate\bot_combat.obj
+.\release\intermediate\bot_commands.obj
+.\release\intermediate\bot_navigate.obj
+.\release\intermediate\dll.obj
+.\release\intermediate\engine.obj
+.\release\intermediate\h_export.obj
+.\release\intermediate\linkfunc.obj
+.\release\intermediate\namefunc.obj
+.\release\intermediate\util.obj
+.\release\intermediate\waypoint.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPC9.tmp"
+Creating temporary file "C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPCA.bat" with contents
+[
+@echo off
+copy    .\release\XBM.dll    %HLROOT%\TYRIAN\dlls\
+]
+Creating command line "C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPCA.bat"
+Compiling...
+bot.cpp
+bot_chat.cpp
+bot_client.cpp
+bot_combat.cpp
+bot_commands.cpp
+bot_navigate.cpp
+dll.cpp
+engine.cpp
+h_export.cpp
+linkfunc.cpp
+namefunc.cpp
+util.cpp
+C:\Project\Tyrian_SRC\XBM\namefunc.cpp(272) : warning C4701: local variable 'section_header' may be used without having been initialized
+waypoint.cpp
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(66) : warning C4189: 'count' : local variable is initialized but not referenced
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(130) : warning C4189: 'count' : local variable is initialized but not referenced
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(187) : warning C4189: 'count' : local variable is initialized but not referenced
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(214) : warning C4189: 'count' : local variable is initialized but not referenced
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(243) : warning C4189: 'count' : local variable is initialized but not referenced
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(948) : warning C4189: 'count' : local variable is initialized but not referenced
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(1936) : warning C4245: 'return' : conversion from 'const int' to 'unsigned short', signed/unsigned mismatch
+C:\Project\Tyrian_SRC\XBM\waypoint.cpp(1945) : warning C4245: 'return' : conversion from 'const int' to 'unsigned short', signed/unsigned mismatch
+Linking...
+   Creating library release/XBM.lib and object release/XBM.exp
+<h3>Output Window</h3>
+Copying to dlls
+Скопировано файлов:         1.
+Creating temporary file "C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPCE.tmp" with contents
+[
+/nologo /o"release/XBM.bsc" 
+.\release\intermediate\bot.sbr
+.\release\intermediate\bot_chat.sbr
+.\release\intermediate\bot_client.sbr
+.\release\intermediate\bot_combat.sbr
+.\release\intermediate\bot_commands.sbr
+.\release\intermediate\bot_navigate.sbr
+.\release\intermediate\dll.sbr
+.\release\intermediate\engine.sbr
+.\release\intermediate\h_export.sbr
+.\release\intermediate\linkfunc.sbr
+.\release\intermediate\namefunc.sbr
+.\release\intermediate\util.sbr
+.\release\intermediate\waypoint.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\Tatiana\LOCALS~1\Temp\RSPCE.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+XBM.dll - 0 error(s), 9 warning(s)
+</pre>
+</body>
+</html>

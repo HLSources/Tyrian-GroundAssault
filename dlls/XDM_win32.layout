@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Linux Release" />
+	<File name="..\common\com_model.h" open="0" top="0" tabpos="0">
+		<Cursor position="6557" topLine="283" />
+	</File>
+	<File name="..\common\mathlib.h" open="0" top="0" tabpos="0">
+		<Cursor position="3936" topLine="121" />
+	</File>
+	<File name="..\common\vector.h" open="0" top="0" tabpos="3">
+		<Cursor position="6530" topLine="192" />
+	</File>
+	<File name="XDM.rc" open="0" top="0" tabpos="0">
+		<Cursor position="1465" topLine="22" />
+	</File>
+	<File name="ai_basenpc_schedule.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="9290" topLine="313" />
+	</File>
+	<File name="airtank.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1142" topLine="26" />
+	</File>
+	<File name="ammo.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="1586" topLine="37" />
+	</File>
+	<File name="animation.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="13077" topLine="515" />
+	</File>
+	<File name="basemonster.h" open="0" top="0" tabpos="0">
+		<Cursor position="12554" topLine="275" />
+	</File>
+	<File name="bmodels.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="24785" topLine="919" />
+	</File>
+	<File name="buttons.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="19353" topLine="681" />
+	</File>
+	<File name="cbase.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="17104" topLine="539" />
+	</File>
+	<File name="cbase.h" open="0" top="0" tabpos="3">
+		<Cursor position="17637" topLine="458" />
+	</File>
+	<File name="chasecam.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1354" topLine="35" />
+	</File>
+	<File name="client.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="26503" topLine="977" />
+	</File>
+	<File name="combat.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4342" topLine="146" />
+	</File>
+	<File name="doors.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="29611" topLine="1002" />
+	</File>
+	<File name="effects.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="54037" topLine="2292" />
+	</File>
+	<File name="effects.h" open="0" top="0" tabpos="1">
+		<Cursor position="5157" topLine="133" />
+	</File>
+	<File name="effects_new.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8119" topLine="337" />
+	</File>
+	<File name="entconfig.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="816" topLine="19" />
+	</File>
+	<File name="environment.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="19088" topLine="792" />
+	</File>
+	<File name="explode.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5219" topLine="179" />
+	</File>
+	<File name="extdll.h" open="0" top="0" tabpos="0">
+		<Cursor position="1532" topLine="43" />
+	</File>
+	<File name="func_break.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="20223" topLine="712" />
+	</File>
+	<File name="fx.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1917" topLine="66" />
+	</File>
+	<File name="game.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="17331" topLine="438" />
+	</File>
+	<File name="gamerules\maprules.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="24312" topLine="1009" />
+	</File>
+	<File name="gamerules\multiplay_gamerules.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2290" topLine="79" />
+	</File>
+	<File name="gibs.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="9280" topLine="296" />
+	</File>
+	<File name="h_battery.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5071" topLine="170" />
+	</File>
+	<File name="h_cycler.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8941" topLine="374" />
+	</File>
+	<File name="h_export.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1837" topLine="65" />
+	</File>
+	<File name="healthkit.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4832" topLine="149" />
+	</File>
+	<File name="items.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4221" topLine="159" />
+	</File>
+	<File name="items_new.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="547" topLine="15" />
+	</File>
+	<File name="makefile" open="0" top="0" tabpos="0">
+		<Cursor position="60" topLine="0" />
+	</File>
+	<File name="monstermaker.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7646" topLine="249" />
+	</File>
+	<File name="monsters.h" open="0" top="0" tabpos="2">
+		<Cursor position="8002" topLine="165" />
+	</File>
+	<File name="monsters\aflock.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="786" topLine="0" />
+	</File>
+	<File name="monsters\apache.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="28535" topLine="985" />
+	</File>
+	<File name="monsters\barnacle.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="12669" topLine="385" />
+	</File>
+	<File name="monsters\barney.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="11109" topLine="394" />
+	</File>
+	<File name="monsters\bigmomma.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="29734" topLine="1146" />
+	</File>
+	<File name="monsters\cat.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1244" topLine="29" />
+	</File>
+	<File name="monsters\controller.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="34738" topLine="1339" />
+	</File>
+	<File name="monsters\gargantua.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="14095" topLine="511" />
+	</File>
+	<File name="monsters\headcrab.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="9149" topLine="347" />
+	</File>
+	<File name="monsters\hgrunt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="69176" topLine="2503" />
+	</File>
+	<File name="monsters\ichthyosaur.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8784" topLine="369" />
+	</File>
+	<File name="monsters\leech.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="18216" topLine="699" />
+	</File>
+	<File name="monsters\monsters.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="64815" topLine="2130" />
+	</File>
+	<File name="monsters\nihilanth.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="27811" topLine="1058" />
+	</File>
+	<File name="monsters\osprey.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="6201" topLine="187" />
+	</File>
+	<File name="monsters\rat.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4959" topLine="146" />
+	</File>
+	<File name="monsters\scientist.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="31561" topLine="1237" />
+	</File>
+	<File name="monsters\talkmonster.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="34425" topLine="1403" />
+	</File>
+	<File name="monsters\tentacle.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7117" topLine="276" />
+	</File>
+	<File name="monsters\turret.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="32938" topLine="1237" />
+	</File>
+	<File name="mortar.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7476" topLine="233" />
+	</File>
+	<File name="nodes.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="49967" topLine="1637" />
+	</File>
+	<File name="plats.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="53610" topLine="2071" />
+	</File>
+	<File name="player.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7877" topLine="182" />
+	</File>
+	<File name="projectiles\agrenade.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="6105" topLine="209" />
+	</File>
+	<File name="projectiles\atomicdevice.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1340" topLine="23" />
+	</File>
+	<File name="projectiles\crossbowbolt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2290" topLine="67" />
+	</File>
+	<File name="projectiles\ggrenade.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="34819" topLine="1046" />
+	</File>
+	<File name="projectiles\hornet.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="6223" topLine="201" />
+	</File>
+	<File name="projectiles\lgrenade.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1363" topLine="26" />
+	</File>
+	<File name="projectiles\lightp.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5155" topLine="176" />
+	</File>
+	<File name="projectiles\mtarget.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1327" topLine="28" />
+	</File>
+	<File name="projectiles\orb_proj.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5931" topLine="207" />
+	</File>
+	<File name="projectiles\plasmaball.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1330" topLine="29" />
+	</File>
+	<File name="projectiles\rpgrocket.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3231" topLine="87" />
+	</File>
+	<File name="projectiles\satchelcharge.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2408" topLine="69" />
+	</File>
+	<File name="projectiles\sqkgrenade.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3534" topLine="117" />
+	</File>
+	<File name="projectiles\teleporter.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7986" topLine="241" />
+	</File>
+	<File name="projectiles\tripminegrenade.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2211" topLine="52" />
+	</File>
+	<File name="saverestore.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="18575" topLine="597" />
+	</File>
+	<File name="saverestore.h" open="0" top="0" tabpos="4">
+		<Cursor position="4916" topLine="111" />
+	</File>
+	<File name="scripted.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="14891" topLine="553" />
+	</File>
+	<File name="sound.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8976" topLine="229" />
+	</File>
+	<File name="subs.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4095" topLine="149" />
+	</File>
+	<File name="triggers.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2602" topLine="59" />
+	</File>
+	<File name="util.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5930" topLine="199" />
+	</File>
+	<File name="util.h" open="0" top="0" tabpos="1">
+		<Cursor position="22207" topLine="477" />
+	</File>
+	<File name="util_xhl.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="16257" topLine="567" />
+	</File>
+	<File name="weaponbox.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2512" topLine="77" />
+	</File>
+	<File name="weapons.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="21628" topLine="606" />
+	</File>
+	<File name="weapons.h" open="0" top="0" tabpos="0">
+		<Cursor position="12642" topLine="290" />
+	</File>
+	<File name="weapons\crowbar.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5154" topLine="190" />
+	</File>
+	<File name="weapons\rpg.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1461" topLine="44" />
+	</File>
+	<File name="world.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="25653" topLine="836" />
+	</File>
+	<File name="..\engine\eiface.h" open="0" top="0" tabpos="0">
+		<Cursor position="17606" topLine="341" />
+	</File>
+	<File name="..\engine\progdefs.h" open="0" top="0" tabpos="0">
+		<Cursor position="3018" topLine="102" />
+	</File>
+	<File name="..\game_shared\voice_banmgr.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="275" topLine="0" />
+	</File>
+	<File name="..\game_shared\voice_gamemgr.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2029" topLine="52" />
+	</File>
+	<File name="..\game_shared\voice_gamemgr.h" open="0" top="0" tabpos="0">
+		<Cursor position="267" topLine="0" />
+	</File>
+	<File name="..\pm_shared\pm_defs.h" open="0" top="0" tabpos="0">
+		<Cursor position="6213" topLine="188" />
+	</File>
+	<File name="..\pm_shared\pm_movevars.h" open="0" top="0" tabpos="0">
+		<Cursor position="1495" topLine="18" />
+	</File>
+	<File name="..\pm_shared\pm_shared.c" open="0" top="0" tabpos="0">
+		<Cursor position="55977" topLine="2155" />
+	</File>
+	<File name="..\pm_shared\pm_shared.h" open="0" top="0" tabpos="0">
+		<Cursor position="605" topLine="11" />
+	</File>
+</CodeBlocks_layout_file>

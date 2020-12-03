@@ -1,0 +1,192 @@
+#
+# X-Half-Life: Deahmatch makefile
+#   3.0.3.5c  20120420
+#
+# CAUTION: this file is very sensitive to syntax, tabs and spaces!
+#
+
+NAME=XDM
+# -march=
+ARCH=i486
+# -m32
+# Not used by GCC 2.95
+CPU_BITS=32
+
+# Make sure this is the correct compiler for your system
+# Can only use gcc 2.95 compilers on newer Linux servers.
+# UPDATE: looks like we can use GCC 4.5.1 too.
+#
+# ONLY USE SPECIAL (NON-UNIVERSAL) FORMAT COMPILERS!
+# gcc for .c and g++ for .cpp
+# GCC alone produces bogus exports! (links fine, but without PM_Move!)
+# When cross-compiling, use 'gcc-linux' and 'g++-linux'
+# When compiling natively, use 'gcc' and 'g++'
+#CXX=g++
+#CC=gcc
+CXX=g++-linux-2.95
+CC=gcc-linux-2.95
+
+# Source directories
+DLL_SRCDIR=.
+#DLL_BOT_SRCDIR=$(DLL_SRCDIR)/bot
+DLL_GR_SRCDIR=$(DLL_SRCDIR)/gamerules
+DLL_MON_SRCDIR=$(DLL_SRCDIR)/monsters
+DLL_PRJ_SRCDIR=$(DLL_SRCDIR)/projectiles
+DLL_WPN_SRCDIR=$(DLL_SRCDIR)/weapons
+COMMON_SRCDIR=$(DLL_SRCDIR)/../common
+ENGINE_SRCDIR=$(DLL_SRCDIR)/../engine
+GAME_SHARED_SRCDIR=$(DLL_SRCDIR)/../game_shared
+PM_SHARED_SRCDIR=$(DLL_SRCDIR)/../pm_shared
+
+# Project directories
+OUTPUT_DIR = $(DLL_SRCDIR)/release_linux
+TARGET = $(OUTPUT_DIR)/$(NAME)_$(ARCH).$(SHLIBEXT)
+INTDIR = $(OUTPUT_DIR)/intermediate-$(ARCH)
+MOD_DIR = /usr/games/hlds/XDM
+
+SHLIBEXT=so
+SHLIBCFLAGS=-fPIC
+SHLIBLDFLAGS=-shared
+BASE_CFLAGS = -D_alloca=alloca
+BASE_CFLAGS += -D_strnicmp=strncasecmp
+BASE_CFLAGS += -Dstricmp=strcasecmp
+BASE_CFLAGS += -Dstrnicmp=strncasecmp
+BASE_CFLAGS += -Dstrcmpi=strcasecmp
+BASE_CFLAGS += -DVALVE_DLL -DSWDS -DGAME_DLL -DUSES_SAVERESTORE -DVECTOR -DSVDLL_NEWFUNCTIONS
+# Not in XDM: -DCLIENT_WEAPONS
+
+
+CFLAGS=$(BASE_CFLAGS)
+CFLAGS += -Wall -w -Wno-non-virtual-dtor
+# -Wno-invalid-offsetof
+CFLAGS += -march=$(ARCH)
+# cc1plus: Invalid option `32' for gcc 2.95
+# Not used by GCC 2.95
+#CFLAGS += -m$(CPU_BITS)
+CFLAGS += -O1
+#CFLAGS += -fpermissive
+#
+# Safe optimization
+#CFLAGS=$(BASE_CFLAGS) -Wall -Wno-conversion -march=$(ARCH) -O1
+#CFLAGS=$(BASE_CFLAGS) -Wall -march=$(ARCH) -O1
+#CFLAGS=$(BASE_CFLAGS) -w -march=$(ARCH) -O1
+#
+# Full optimization
+#CFLAGS=$(BASE_CFLAGS) -Wall -O1 -march=$(ARCH) -ffast-math -funroll-loops \
+#	-fomit-frame-pointer -fexpensive-optimizations \
+#	-malign-loops=2 -malign-jumps=2 -malign-functions=2
+#
+# Debug
+#CFLAGS=$(BASE_CFLAGS) -Wall -g
+#CFLAGS=$(BASE_CFLAGS) -w -g
+
+INCLUDEDIRS = -I$(DLL_SRCDIR)
+#INCLUDEDIRS += -I$(DLL_BOT_SRCDIR)
+INCLUDEDIRS += -I$(DLL_GR_SRCDIR)
+INCLUDEDIRS += -I$(DLL_MON_SRCDIR)
+INCLUDEDIRS += -I$(DLL_PRJ_SRCDIR)
+INCLUDEDIRS += -I$(DLL_WPN_SRCDIR)
+INCLUDEDIRS += -I$(COMMON_SRCDIR)
+INCLUDEDIRS += -I$(ENGINE_SRCDIR)
+INCLUDEDIRS += -I$(GAME_SHARED_SRCDIR)
+INCLUDEDIRS += -I$(PM_SHARED_SRCDIR)
+
+# Need to specifically link Maths and C++ libraries in latest gcc debugging
+#
+# http://articles.thewavelength.net/617/
+# On my computer, gcc 2.95.3 was installed into /usr/local/gcc295 but yours may be installed in a different place. You are looking for a file named libstdc++.a in your gcc 2.95 directory, NOT the one in your gcc 3.x directory. Once you find the path to it, you need to add it to your Makefile.
+#
+# g++-2.95_2.95.4-24_i386.deb
+# gcc-2.95_2.95.4-24_i386.deb
+# cpp-2.95_2.95.4-24_i386.deb
+# libstdc++2.10-dev_2.95.4-24_i386.deb
+# libstdc++2.10-glibc2.2_2.95.4-24_i386.deb
+# tofrodos_1.7.8.debian.1-1_i386.deb
+#
+# You need to tell your linker to link this file in with your game, and you can do it like this:
+#  in native linux:
+# LDFLAGS = /usr/lib/gcc-lib/i486-linux-gnu/2.95.4/libstdc++.a
+#  in cygwin crosstool:
+# UPDATE: no need for these with GCC 4.5.x
+
+LDFLAGS = /opt/crosstool/i686-unknown-linux-gnu/gcc-2.95.3-glibc-2.1.3/lib/gcc-lib/i686-unknown-linux-gnu/2.95.3/libstdc++.a
+LDFLAGS += -lm 
+#-lstdc++
+
+# Compiler flags to generate dependency files.
+#GENDEPFLAGS = -MD -MP -MF .dep/$(@F).d
+
+# If 'cannot use -o and -c or -S', you've got some garbage in this line.
+DO_CXX=$(CXX) $(CFLAGS) $(SHLIBCFLAGS) $(INCLUDEDIRS) -o $@ -c $<
+DO_CC=$(CC) $(CFLAGS) $(SHLIBCFLAGS) $(INCLUDEDIRS) -o $@ -c $<
+
+
+# SETUP AND BUILD. XDM uses the same directory for all objects
+# FORMAT:
+# <target>:<source>
+#
+
+# make all OBJECT dependencies
+$(INTDIR)/%.o: $(DLL_SRCDIR)/%.cpp
+	$(DO_CXX)
+#$(INTDIR)/%.o: $(DLL_BOT_SRCDIR)/%.cpp
+#	$(DO_CC)
+$(INTDIR)/%.o: $(DLL_GR_SRCDIR)/%.cpp
+	$(DO_CXX)
+$(INTDIR)/%.o: $(DLL_MON_SRCDIR)/%.cpp
+	$(DO_CXX)
+$(INTDIR)/%.o: $(DLL_PRJ_SRCDIR)/%.cpp
+	$(DO_CXX)
+$(INTDIR)/%.o: $(DLL_WPN_SRCDIR)/%.cpp
+	$(DO_CXX)
+$(INTDIR)/%.o: $(GAME_SHARED_SRCDIR)/%.cpp
+	$(DO_CXX) -I../dlls
+$(INTDIR)/%.o: $(COMMON_SRCDIR)/%.cpp
+	$(DO_CXX) -I../dlls -I../common
+#$(INTDIR)/%.o: $(GAME_SHARED_SRCDIR)/voice_banmgr.cpp
+#	$(DO_CC) -I../dlls
+#$(INTDIR)/%.o: $(GAME_SHARED_SRCDIR)/voice_gamemgr.cpp
+#	$(DO_CC) -I../dlls
+$(INTDIR)/%.o: $(PM_SHARED_SRCDIR)/pm_shared.cpp
+	$(DO_CC) -I../dlls
+
+# define all object files.
+#example2 OBJ = $(SRC:%.c=$(OBJDIR)/%.o) $(CPPSRC:%.cpp=$(OBJDIR)/%.o) $(ASRC:%.S=$(OBJDIR)/%.o)
+
+OBJ = $(patsubst $(DLL_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(DLL_SRCDIR)/*.cpp))
+#OBJ += $(patsubst $(DLL_BOT_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(DLL_BOT_SRCDIR)/*.cpp))
+OBJ += $(patsubst $(DLL_GR_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(DLL_GR_SRCDIR)/*.cpp))
+OBJ += $(patsubst $(DLL_MON_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(DLL_MON_SRCDIR)/*.cpp))
+OBJ += $(patsubst $(DLL_PRJ_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(DLL_PRJ_SRCDIR)/*.cpp))
+OBJ += $(patsubst $(DLL_WPN_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(DLL_WPN_SRCDIR)/*.cpp))
+#OBJ += $(patsubst $(GAME_SHARED_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(GAME_SHARED_SRCDIR)/*.cpp))
+#OBJ += $(patsubst $(GAME_SHARED_SRCDIR)/%.cpp,$(INTDIR)/voice_banmgr.o,$(wildcard $(GAME_SHARED_SRCDIR)/*.cpp))
+#OBJ += $(patsubst $(GAME_SHARED_SRCDIR)/%.cpp,$(INTDIR)/voice_gamemgr.o,$(wildcard $(GAME_SHARED_SRCDIR)/*.cpp))
+OBJ += $(patsubst $(COMMON_SRCDIR)/%.cpp,$(INTDIR)/%.o,$(wildcard $(COMMON_SRCDIR)/*.cpp))
+OBJ += $(patsubst $(PM_SHARED_SRCDIR)/%.c,$(INTDIR)/%.o,$(wildcard $(PM_SHARED_SRCDIR)/*.c))
+OBJ += $(INTDIR)/voice_gamemgr.o
+
+# make the PROJECT dependency
+#$(TARGET) : neat $(OBJ)
+#	$(DO_CC)
+
+$(TARGET): neat $(OBJ)
+	$(CXX) $(CFLAGS) $(SHLIBLDFLAGS) -o $@ $(OBJ) $(LDFLAGS)
+
+# copy output (target) to mod directory
+install:
+	cp -f $(TARGET) ${MOD_DIR}/dlls/.
+
+# create intermediate/output directories
+neat:
+	-mkdir $(OUTPUT_DIR)
+	-mkdir $(INTDIR)
+
+# clean output files
+clean:
+	-rm -f $(INTDIR)/*
+	-rm -f $(TARGET)
+
+# clean everything, delete output directory
+spotless: clean
+	-rm -r $(INTDIR)

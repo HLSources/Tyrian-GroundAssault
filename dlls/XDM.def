@@ -1,0 +1,15 @@
+LIBRARY TYRIAN_i686
+EXPORTS
+	GiveFnptrsToDll			@1
+	GetEntityAPI			@2
+	GetEntityAPI2			@3
+	GetNewDLLFunctions		@4
+;	Server_GetBlendingInterface @5
+
+; XHL-specific
+;	Classify				@6
+;	EntityIs				@7
+;	EntityRelationship		@8
+;	CanHaveItem				@9
+SECTIONS
+	.data READ WRITE
